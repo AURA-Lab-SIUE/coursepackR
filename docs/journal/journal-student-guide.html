@@ -270,13 +270,13 @@ Word ranges are enforced when you render:</p>
 <p>Run:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">download_journal</span>(<span class="st">"mc451"</span>, <span class="at">dest =</span> <span class="st">"."</span>)   <span class="co"># or "mc501"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>This creates a folder <code>journal/</code> with everything you need.</p>
-<p><strong>FIGURE</strong> <img src="../images/files-pane.png" title="RStudio Files pane" class="img-fluid quarto-figure quarto-figure-center" alt="RStudio Files pane showing the new journal/ directory."></p>
+<p>This populates your project’s main folder with the complete journal structure.</p>
+<p><strong>FIGURE</strong> <img src="../images/files-pane.png" title="RStudio Files pane" class="img-fluid quarto-figure quarto-figure-center" alt="RStudio Files pane showing the populated journal project directory."></p>
 <hr>
 </section>
 <section id="step-4-add-a-new-week-chapter" class="level2">
 <h2 class="anchored" data-anchor-id="step-4-add-a-new-week-chapter">Step 4 — Add a new week chapter</h2>
-<p>From inside the <code>journal/</code> folder in the <strong>Files</strong> pane (click to enter it), run in the <strong>Console</strong>:</p>
+<p>In the <strong>Console</strong> pane at the bottom-left, run:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Pick your week number (2–14). Example:</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">new_journal_entry</span>(<span class="at">week =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -285,7 +285,7 @@ Word ranges are enforced when you render:</p>
 <li>A new chapter is created and named with <strong>today’s date</strong>: <code>entries/YYYY-MM-DD.qmd</code>.</li>
 <li>The <strong>three prompts for that week</strong> are inserted.</li>
 <li>The correct <strong>word range</strong> for your course is set.</li>
-<li><code>_quarto.yml</code> is updated so the chapter appears in the book.</li>
+<li><code>_quarto.yml</code> is <strong>automatically updated</strong> to add the new chapter to the book’s table of contents.</li>
 </ol>
 <p><strong>FIGURE</strong> <img src="../images/journal-week.png" title="Choosing Week for Journal" class="img-fluid quarto-figure quarto-figure-center" alt="Console showing new_journal_entry(week = 3) and “Created: entries/YYYY-MM-DD.qmd."></p>
 <blockquote class="blockquote">
@@ -322,15 +322,13 @@ Word ranges are enforced when you render:</p>
 <p>You have two equivalent options. Use <strong>one</strong> of them:</p>
 <p><strong>A) Click Render on <code>index.qmd</code></strong></p>
 <ul>
-<li>In the Files pane, open <code>journal/index.qmd</code>.</li>
-<li>Click the <strong>Render</strong> button in the editor toolbar. <em>This renders the entire book.</em></li>
+<li>In the Files pane, click on <code>index.qmd</code>.</li>
+<li>Click the <strong>Render</strong> button in the editor toolbar.</li>
 </ul>
-<p><strong>B) Use the Console (renders the whole book)</strong></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># From inside the journal/ folder:</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Or explicitly:</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render index.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Outputs are in <code>journal/_book/</code>:</p>
+<p><strong>B) Use the Console</strong></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Run from the project's root directory</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Outputs are in the <code>_book/</code> directory:</p>
 <ul>
 <li>An <strong>HTML</strong> book (always, multi-page site with navigation = unified entity).</li>
 <li><strong>PDF/EPUB</strong> if you have TinyTeX installed.</li>
@@ -340,7 +338,7 @@ Word ranges are enforced when you render:</p>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>quarto install tinytex</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># or</span></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">mccourse_setup</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>FIGURE</strong> <img src="../images/book-files.png" title="Files Pane with Book Files" class="img-fluid quarto-figure quarto-figure-center" alt="Files pane showing journal/_book/ with index.html and the chapter pages."></p>
+<p><strong>FIGURE</strong> <img src="../images/book-files.png" title="Files Pane with Book Files" class="img-fluid quarto-figure quarto-figure-center" alt="Files pane showing _book/ with index.html and the chapter pages."></p>
 <blockquote class="blockquote">
 <p><strong>Tip:</strong> Rendering a single chapter file will <strong>not</strong> produce the unified journal. Always render <strong><code>index.qmd</code></strong> (or run <code>quarto render</code>) to build the whole book.</p>
 </blockquote>
@@ -348,10 +346,10 @@ Word ranges are enforced when you render:</p>
 </section>
 <section id="step-7-submit-via-github" class="level2">
 <h2 class="anchored" data-anchor-id="step-7-submit-via-github">Step 7 — Submit via GitHub</h2>
-<p>When you add or edit a chapter, <strong>two files change</strong>:</p>
+<p>When you add or edit a chapter, <strong>two files are modified</strong>:</p>
 <ol type="1">
-<li><code>journal/entries/YYYY-MM-DD.qmd</code></li>
-<li><code>journal/_quarto.yml</code></li>
+<li>The new chapter file: <code>entries/YYYY-MM-DD.qmd</code></li>
+<li>The book’s table of contents: <code>_quarto.yml</code> (updated automatically)</li>
 </ol>
 <p>In RStudio:</p>
 <ol type="1">
@@ -361,7 +359,7 @@ Word ranges are enforced when you render:</p>
 <li><strong>Commit</strong> and <strong>Push</strong>.</li>
 </ol>
 <blockquote class="blockquote">
-<p>If you forget <code>_quarto.yml</code>, your new chapter won’t appear for others.</p>
+<p>If you forget to commit the changes to <code>_quarto.yml</code>, your new chapter won’t appear in the published book.</p>
 </blockquote>
 <hr>
 </section>
@@ -378,7 +376,7 @@ Word ranges are enforced when you render:</p>
   C --&gt; D["new_journal_entry(week = N)"]
   D --&gt; E["Open entries/YYYY-MM-DD.qmd → keep ONE prompt → write in Response"]
   E --&gt; F["Render WHOLE book → Render index.qmd OR `quarto render`"]
-  F --&gt; G["Stage + Commit + Push → entries/YYYY-MM-DD.qmd + _quarto.yml"]
+  F --&gt; G["Stage + Commit + Push → `entries/YYYY-MM-DD.qmd` + `_quarto.yml`"]
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -391,7 +389,7 @@ Word ranges are enforced when you render:</p>
 <h2 class="anchored" data-anchor-id="faq">FAQ</h2>
 <p><strong>It didn’t ask me for the week number. Is that okay?</strong> Yes. In RStudio you usually call the function directly: <code>new_journal_entry(week = 5)</code>.</p>
 <p><strong>My word count says “Out of range.”</strong> Edit until you are within the range for your course.</p>
-<p><strong>The new chapter doesn’t appear in the rendered book.</strong> Be sure you rendered the <strong>whole book</strong> (Render <code>index.qmd</code> or run <code>quarto render</code>) and committed <strong>both</strong> the entry file and <code>_quarto.yml</code>.</p>
+<p><strong>The new chapter doesn’t appear in the rendered book.</strong> Be sure you rendered the <strong>whole book</strong> (Render <code>index.qmd</code> or run <code>quarto render</code> from the project root) and committed <strong>both</strong> the new entry file and the automatically updated <code>_quarto.yml</code>.</p>
 <p><strong>Can I revise later?</strong> Yes. Edit the same <code>entries/YYYY-MM-DD.qmd</code>, then commit and push again.</p>
 <hr>
 </section>
@@ -403,7 +401,7 @@ Word ranges are enforced when you render:</p>
 <li><label><input type="checkbox">I wrote my answer <strong>inside the Response block</strong> only.</label></li>
 <li><label><input type="checkbox">My word count is <strong>in range</strong>.</label></li>
 <li><label><input type="checkbox">I <strong>rendered the whole book</strong> by rendering <code>index.qmd</code> (or running <code>quarto render</code>).</label></li>
-<li><label><input type="checkbox">I <strong>staged, committed, and pushed</strong> <code>entries/YYYY-MM-DD.qmd</code> <strong>and</strong> <code>_quarto.yml</code>.</label></li>
+<li><label><input type="checkbox">I <strong>staged, committed, and pushed</strong> <code>entries/YYYY-MM-DD.qmd</code> <strong>and</strong> the modified <code>_quarto.yml</code>.</label></li>
 </ul>
 
 
