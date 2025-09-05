@@ -74,7 +74,7 @@
     "href": "workflow/weekly-workflows.html#quick-checklist-each-week",
     "title": "Course Workflow",
     "section": "Quick checklist (each week)",
-    "text": "Quick checklist (each week)\n\nOpen the Project\nUpdate package (pak::pak(\"SIM-Lab-SIUE/mccoursepack\"))\ndownload_week(\"mc451\", N, dest = \".\")\nDo the assignment + add journal entry\nRender to PDF/HTML (and render the journal book)\nStage → Commit → Push to GitHub\n\n\n\n\n\n\n\n\nMaintainers only\n\n\n\nIf you’re editing the documentation site (site/):\nquarto preview site     # live preview\ngit add -A\ngit commit -m \"docs: expand troubleshooting & reference\"\ngit push\nGitHub Actions will render and deploy to Pages automatically.",
+    "text": "Quick checklist (each week)\n\nOpen the Project\nUpdate package (pak::pak(\"SIM-Lab-SIUE/mccoursepack\"))\ndownload_week(\"mc451\", N, dest = \".\")\nDo the assignment + add journal entry\nRender to PDF/HTML (and render the journal book)\nStage → Commit → Push to GitHub\n\n\n\n\n\n\n\n\nNoteMaintainers only\n\n\n\nIf you’re editing the documentation site (site/):\nquarto preview site     # live preview\ngit add -A\ngit commit -m \"docs: expand troubleshooting & reference\"\ngit push\nGitHub Actions will render and deploy to Pages automatically.",
     "crumbs": [
       "Course Workflow"
     ]
@@ -86,7 +86,7 @@
     "section": "",
     "text": "This guide is for students running older macOS versions who run into crashes or compatibility problems when using RStudio.",
     "crumbs": [
-      "Getting Started",
+      "Home",
       "RStudio on Older Macs"
     ]
   },
@@ -97,7 +97,7 @@
     "section": "Step 1 — Identify Your macOS Version",
     "text": "Step 1 — Identify Your macOS Version\nClick the Apple menu → About This Mac, and note your macOS version (e.g., 10.15, 11, 12).",
     "crumbs": [
-      "Getting Started",
+      "Home",
       "RStudio on Older Macs"
     ]
   },
@@ -108,7 +108,7 @@
     "section": "Step 2 — Use the Correct RStudio for Your macOS",
     "text": "Step 2 — Use the Correct RStudio for Your macOS\n\n\n\nmacOS Version\nRecommended RStudio Version\n\n\n\n\n12 (Ventura) or newer\nRStudio 2024.09.1+394 or later (Posit Docs)\n\n\n11 (Big Sur)\nRStudio 2023.09.1+494 (Posit Docs)\n\n\n10.15 (Catalina)\nRStudio 2022.07.2+576 (Posit Docs)\n\n\n\n👉 Download older builds from Posit’s “previous versions” page.",
     "crumbs": [
-      "Getting Started",
+      "Home",
       "RStudio on Older Macs"
     ]
   },
@@ -119,7 +119,7 @@
     "section": "Step 3 — Install a Supported R Version",
     "text": "Step 3 — Install a Supported R Version\nOlder Macs often crash with R 4.5.x inside RStudio. Choose a more stable option:\n\nR 4.5.0 (released April 11, 2025): may be safe if needed (CRAN download).\n\nR 4.4.3 or 4.4.1: safest bets. Both are available in CRAN’s macOS directory.\n\nWhere to find them:\n\nCRAN macOS binaries\n\nBig Sur ARM64/Intel builds\n\nHelpful Stack Overflow thread",
     "crumbs": [
-      "Getting Started",
+      "Home",
       "RStudio on Older Macs"
     ]
   },
@@ -130,7 +130,7 @@
     "section": "Step 4 — Do the 60-Second Console Check",
     "text": "Step 4 — Do the 60-Second Console Check\nOpen Terminal, type:\nR\n1+1\n\nIf it prints 2, R is working fine.\nNext, open RStudio and try again.\nIf RStudio crashes immediately or while typing → it’s a compatibility issue between R and RStudio.",
     "crumbs": [
-      "Getting Started",
+      "Home",
       "RStudio on Older Macs"
     ]
   },
@@ -141,7 +141,7 @@
     "section": "Step 5 — If it Still Crashes",
     "text": "Step 5 — If it Still Crashes\n\nDowngrade R to 4.4.3 or 4.4.1.\nIf you must keep R 4.5.x, use an older RStudio version (see table above).\nStill stuck?\n\nClear RStudio’s user state (e.g., delete ~/.config/rstudio).\nDisable GPU rendering under Preferences → General → Advanced.",
     "crumbs": [
-      "Getting Started",
+      "Home",
       "RStudio on Older Macs"
     ]
   },
@@ -152,7 +152,7 @@
     "section": "Quick Download Links",
     "text": "Quick Download Links\n(replace &lt;arch&gt; with arm64 or x86_64 depending on your Mac chip)\n\nR 4.5.0 – Direct CRAN link\nR 4.4.3 – Direct CRAN link\nR 4.4.1 – Direct CRAN link",
     "crumbs": [
-      "Getting Started",
+      "Home",
       "RStudio on Older Macs"
     ]
   },
@@ -163,7 +163,7 @@
     "section": "TL;DR: Nerdy Survival Guide",
     "text": "TL;DR: Nerdy Survival Guide\n\n\nCheck your macOS → map it to an RStudio version.\nInstall a stable R (4.4.x is safest).\nTest in Terminal. If it works there but not in RStudio → compatibility bug.\nDowngrade R or RStudio if needed.\nClean RStudio’s settings or turn off GPU if stubborn.\n\n\n💡 Translation: “R works, RStudio doesn’t? Time-travel one version back—either R or RStudio.”",
     "crumbs": [
-      "Getting Started",
+      "Home",
       "RStudio on Older Macs"
     ]
   },
@@ -174,7 +174,7 @@
     "section": "",
     "text": "Tip\nLoad the package each R session:\nlibrary(mccoursepack)\nThis page lists the main functions students will use in this course.\nFor more detail, see Function Details.",
     "crumbs": [
-      "Getting Started",
+      "Home",
       "Package Reference"
     ]
   },
@@ -185,7 +185,7 @@
     "section": "At a Glance",
     "text": "At a Glance\n\n\n\n\n\n\n\nFunction\nWhat it does\n\n\n\n\nlist_courses()\nLists installed course IDs (e.g., \"mc451\", \"mc501\")\n\n\nlist_weeks(course = NULL)\nShows which week folders are available\n\n\ndownload_week(course, week, dest = \".\")\nCopies a week’s files into your project\n\n\nopen_week(week, dest = \".\")\nOpens a week folder in your system file browser\n\n\nmccourse_setup()\nInstalls Quarto, TinyTeX, and core packages if missing\n\n\nmccourse_self_test()\nChecks which courses/weeks are available\n\n\nmccourse_update()\nUpdates the package to the latest GitHub version",
     "crumbs": [
-      "Getting Started",
+      "Home",
       "Package Reference"
     ]
   },
@@ -470,8 +470,8 @@
     "section": "",
     "text": "Your GitHub profile can show a custom landing page—a README.md that lives in a special repository named exactly like your username. No code needed; it’s all point-and-click in the browser.",
     "crumbs": [
-      "Getting Started",
-      "GitHub Landing Page"
+      "Home",
+      "Build Your GitHub Landing Page"
     ]
   },
   {
@@ -481,8 +481,8 @@
     "section": "What You’ll Make",
     "text": "What You’ll Make\n\nA public repo named your GitHub username\n\nA README.md inside it\n\nA profile page that displays that README to visitors",
     "crumbs": [
-      "Getting Started",
-      "GitHub Landing Page"
+      "Home",
+      "Build Your GitHub Landing Page"
     ]
   },
   {
@@ -492,8 +492,8 @@
     "section": "Step 1 — Confirm Your Username",
     "text": "Step 1 — Confirm Your Username\n\nSign in at GitHub.com.\n\nClick your avatar (top-right) → Your profile.\n\nNote your username (the text after github.com/ in the URL).\n\nExample: github.com/alexleith → username is alexleith.\nUse the username exactly as shown. Repo names are case-insensitive, but matching avoids confusion.",
     "crumbs": [
-      "Getting Started",
-      "GitHub Landing Page"
+      "Home",
+      "Build Your GitHub Landing Page"
     ]
   },
   {
@@ -503,8 +503,8 @@
     "section": "Step 2 — Create the Special Repository",
     "text": "Step 2 — Create the Special Repository\n\nClick the + (top-right) → New repository.\n\nRepository name: type your exact username (e.g., alexleith).\n\nSet visibility to Public (required).\n\nCheck Initialize this repository with a README.\n\nClick Create repository.\n\nYou now have a repo at:\n\ngithub.com/&lt;username&gt;/&lt;username&gt;\n\nThis is your profile repo.",
     "crumbs": [
-      "Getting Started",
-      "GitHub Landing Page"
+      "Home",
+      "Build Your GitHub Landing Page"
     ]
   },
   {
@@ -514,8 +514,8 @@
     "section": "Step 3 — Edit Your README",
     "text": "Step 3 — Edit Your README\n\nIn the new repo, click README.md.\n\nClick the pencil icon (Edit).\n\nReplace the placeholder text with something short and welcoming (see template below).\n\nScroll down, add a brief commit message (e.g., “Create profile README”), and click Commit changes.\n\nVisit your profile: click your avatar → Your profile. You should see your README content at the top.",
     "crumbs": [
-      "Getting Started",
-      "GitHub Landing Page"
+      "Home",
+      "Build Your GitHub Landing Page"
     ]
   },
   {
@@ -525,8 +525,8 @@
     "section": "A Copy-Paste Template (Customize Freely)",
     "text": "A Copy-Paste Template (Customize Freely)\n# Hi, I'm YOUR NAME 👋\n\nWelcome to my GitHub profile! I’m a [your major/role] at [your university/organization].\n\nThis semester I’m working on projects in R/RStudio and documenting progress in my weekly journal.\n\n## What I’m learning this term\n- R, RStudio, and Quarto for data analysis & reporting\n- Git + GitHub for version control and collaboration\n- Research methods and reproducible workflows\n\n## Find me\n- Email: [your email or university email, optional]\n- Website/Portfolio: [link, optional]\n- LinkedIn: [link, optional]\n\n## Current tools\n- **Languages:** R, Markdown\n- **Tools:** RStudio, Quarto, GitHub\n\n&gt; ⚠️ Privacy note: keep personal info minimal; use links you’re comfortable sharing publicly.\nTips:\n\nKeep it short and professional.\nUse headings (#, ##) to organize.\nAdd alt text to any images, e.g., ![Alt text](path/to/image.png).",
     "crumbs": [
-      "Getting Started",
-      "GitHub Landing Page"
+      "Home",
+      "Build Your GitHub Landing Page"
     ]
   },
   {
@@ -536,8 +536,8 @@
     "section": "Optional Polish (Fast Wins)",
     "text": "Optional Polish (Fast Wins)\n\nProfile bio & links: Avatar → Settings → Public profile. Add a display name, bio, location, pronouns, website, and choose a Public email (or keep hidden).\nPinned repositories: On your profile, click Customize your pins to feature key projects (e.g., your journal repo).\nAppearance: Avatar → Settings → Appearance to pick a theme.",
     "crumbs": [
-      "Getting Started",
-      "GitHub Landing Page"
+      "Home",
+      "Build Your GitHub Landing Page"
     ]
   },
   {
@@ -547,8 +547,8 @@
     "section": "Troubleshooting",
     "text": "Troubleshooting\n\nREADME not showing?\n\nRepo must be named exactly your username.\nRepo must be Public.\nFile name must be README.md at the root of the repo (not in a folder).\nRefresh your profile page.\n\nCan’t find “New repository”? Click the + in the top-right → New repository.\nChanges not showing? Make sure you clicked Commit changes, then refresh.",
     "crumbs": [
-      "Getting Started",
-      "GitHub Landing Page"
+      "Home",
+      "Build Your GitHub Landing Page"
     ]
   },
   {
@@ -558,8 +558,8 @@
     "section": "Updating Later",
     "text": "Updating Later\nYou can edit README.md anytime:\n\nIn the browser: open the file → pencil → edit → Commit changes.\nFrom RStudio or Git: pull → edit → commit → push (handy once you’re using Git locally).",
     "crumbs": [
-      "Getting Started",
-      "GitHub Landing Page"
+      "Home",
+      "Build Your GitHub Landing Page"
     ]
   },
   {
@@ -569,7 +569,7 @@
     "section": "",
     "text": "This guide provides detailed, OS-specific steps for installing the core software needed for this course: R, RStudio, and Git.",
     "crumbs": [
-      "Getting Started",
+      "Home",
       "Installation Guide"
     ]
   },
@@ -580,7 +580,7 @@
     "section": "Installing on Windows",
     "text": "Installing on Windows\nFollow these steps in order.\n\n1. Install R\n\nGo to the CRAN (Comprehensive R Archive Network).\nClick the large “Download R-X.X.X for Windows” link at the top of the page.\nRun the downloaded installer (.exe file).\nAccept all the default settings during installation. Click “Next” until it’s finished.\n\n\n\n2. Install RStudio\n\nGo to the Posit website.\nClick the “Download RStudio Desktop” button. The site should automatically detect you are on Windows.\nRun the downloaded installer.\nAccept all the default settings.\n\n\n\n3. Install Git\n\nGo to the official Git website.\nClick the “Windows” link to download the installer.\nRun the installer. This one has many screens, but you can safely accept all the default options. The most important thing is to ensure that Git is added to your system’s PATH, which is the default behavior.",
     "crumbs": [
-      "Getting Started",
+      "Home",
       "Installation Guide"
     ]
   },
@@ -591,7 +591,7 @@
     "section": "Installing on macOS",
     "text": "Installing on macOS\nFollow these steps in order.\n\n1. Install R\n\nGo to the CRAN (Comprehensive R Archive Network).\nLook for the “Latest release” section. Download the package (.pkg file) that matches your Mac’s processor (Apple Silicon “M1/M2/M3” or Intel). If you’re unsure, click the Apple menu → “About This Mac” to check.\nRun the downloaded installer. Accept all default settings.\n\n\n\n2. Install RStudio\n\nGo to the Posit website.\nClick the “Download RStudio Desktop” button. The site should automatically detect you are on macOS.\nThis will download a .dmg file. Open it.\nA new window will appear. Drag the RStudio icon into the Applications folder icon.\nThe first time you open RStudio, you may get a security warning. Click “Open” to proceed.\n\n\n\n3. Install Git\nmacOS comes with Git pre-installed. However, it’s often best to install a newer version using Homebrew, a package manager for macOS.\n\nInstall Homebrew (if you don’t have it): Open the Terminal app (you can find it in Applications/Utilities) and paste the following command, then press Enter: bash     /bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\nInstall Git: Once Homebrew is installed, run the following command in the Terminal: bash     brew install git This ensures you have an up-to-date version of Git.",
     "crumbs": [
-      "Getting Started",
+      "Home",
       "Installation Guide"
     ]
   },
@@ -602,6 +602,7 @@
     "section": "",
     "text": "Welcome to mccoursepack. This guide helps you install tools, open your first project, and render your first journal.",
     "crumbs": [
+      "Home",
       "Getting Started"
     ]
   },
@@ -612,6 +613,7 @@
     "section": "Step 1 – Install or Update the Course Package",
     "text": "Step 1 – Install or Update the Course Package\nThe course package mccoursepack is hosted on GitHub. Use the remotes package to install or update it.\n# Install remotes if not already installed\ninstall.packages(\"remotes\")\n\n# Install or update the course package\nremotes::install_github(\"SIM-Lab-SIUE/mccoursepack\")\n\n# Load the package\nlibrary(mccoursepack)\n\nRun the remotes::install_github() command at the start of the semester and again whenever updates are announced.",
     "crumbs": [
+      "Home",
       "Getting Started"
     ]
   },
@@ -622,6 +624,7 @@
     "section": "Step 2 – Create Two RStudio Projects",
     "text": "Step 2 – Create Two RStudio Projects\nProjects keep everything organized. You’ll create two:\n\nA Tasks Project for weekly assignments.\nA Journal Project for your course journal.\n\n\nCreate the Tasks Project\n\nIn RStudio: File -&gt; New Project -&gt; New Directory -&gt; New Project.\nChoose a location, e.g., Documents/MC451/.\nName the folder: tasks_project.\nClick Create Project.\n\n\n\nCreate the Journal Project\n\nAgain: File -&gt; New Project -&gt; New Directory -&gt; New Project.\nSame parent folder (Documents/MC451/).\nName the folder: journal_project.\nClick Create Project.\n\nYou now have two separate projects: one for all weekly tasks, one for your running journal.",
     "crumbs": [
+      "Home",
       "Getting Started"
     ]
   },
@@ -632,6 +635,7 @@
     "section": "Step 3 – Set Up the Journal Project",
     "text": "Step 3 – Set Up the Journal Project\n\nOpen the journal_project in RStudio.\nIn the Console, run:\n\ndownload_journal(\"mc451\")   # or \"mc501\" if in the graduate course\nThis creates the journal/ folder structure with an entries/ directory, a template, and scripts for adding new entries.",
     "crumbs": [
+      "Home",
       "Getting Started"
     ]
   },
@@ -642,6 +646,7 @@
     "section": "Step 4 – Set Up the Tasks Project",
     "text": "Step 4 – Set Up the Tasks Project\n\nOpen the tasks_project in RStudio.\nUse the helper function to download the starter files for your first week:\n\ndownload_week(\"mc451\", week = 1)\n(or substitute \"mc501\" for the graduate course).\nRepeat each week: change the week number to get that week’s scaffold.",
     "crumbs": [
+      "Home",
       "Getting Started"
     ]
   },
@@ -652,6 +657,7 @@
     "section": "Step 5 – Confirm Everything Works",
     "text": "Step 5 – Confirm Everything Works\n\nOpen the journal_project -&gt; render the index file:\nquarto render\nThis should build a unified journal book.\nOpen the tasks_project -&gt; render a week’s scaffold. Check that Quarto builds the .qmd file into HTML/PDF.\n\nIf both projects render without errors, you’re fully set up.",
     "crumbs": [
+      "Home",
       "Getting Started"
     ]
   },
@@ -662,6 +668,7 @@
     "section": "Mental Model",
     "text": "Mental Model\n\nJournal project: long-running notebook, one entry per week.\nTasks project: fresh scaffolds each week for assignments, labs, and exercises.\nmccoursepack package: the engine that fetches and organizes everything for you.",
     "crumbs": [
+      "Home",
       "Getting Started"
     ]
   },
@@ -673,7 +680,7 @@
     "text": "This guide provides a detailed, beginner-friendly workflow for connecting RStudio to Git and GitHub. We will use the usethis R package to handle most of the complex steps automatically.\n\nPrerequisites: Install Helper Packages\nWe will use the usethis and gitcreds packages to simplify the setup. Run this code in the RStudio Console to install and load them.\ninstall.packages(c(\"usethis\", \"gitcreds\"))\nlibrary(usethis)\nlibrary(gitcreds)\n\n\nPart 1: One-Time Setup\nYou only need to do this part once on your computer.\n\nStep 1: Install Git on Your Computer\nGit is a separate program from R and RStudio. You must install it first.\n\nGo to the official Git website: https://git-scm.com/downloads\nDownload the installer for your operating system (Windows or macOS).\nRun the installer, accepting all the default options. You don’t need to change anything.\n\n\n\nStep 2: Configure Git with Your Identity\nOpen the RStudio Console and run the following two lines of code, replacing the example text with your actual GitHub username and email. This is how your commits will be identified.\n# Replace with your info\nedit_git_config() \nThis will open a text file for Git’s global configuration. Add the following lines, save the file, and close it.\n[user]\n  name = \"Your Name\"\n  email = \"your.email@example.com\"\n\n\nStep 3: Connect RStudio to GitHub with a Personal Access Token (PAT)\nGitHub requires a special password called a Personal Access Token (PAT) to connect with tools like RStudio. The usethis package makes this easy.\n\nGenerate the Token: In the RStudio Console, run this command. It will open a new tab in your web browser, taking you to the “New personal access token” page on GitHub.\ncreate_github_token()\nConfigure the Token on GitHub:\n\nIn the “Note” field, give your token a descriptive name, like “RStudio Token”.\nFor “Expiration,” it is recommended to set a custom date (e.g., the end of the semester).\nUnder “Select scopes,” check the box next to repo. This gives your token permission to access your repositories.\nScroll to the bottom and click “Generate token”.\n\nCopy the Token: You will now see a new page with your token. It will look something like ghp_.... This is the only time you will ever see this token. Click the copy icon next to it.\nSave the Token in RStudio: Go back to RStudio and run the following command in the Console. It will prompt you to paste your token. Paste it and press Enter.\ngitcreds_set()\n\nYou are now fully configured! RStudio can securely talk to your GitHub account.\n\n\n\nPart 2: Creating and Connecting a Project\nThis is the workflow you will use for each new project (like your course journal).\n\nStep 1: Create a New RStudio Project\nFirst, create a new, empty RStudio Project. Do not initialize it as a Git repository yet.\n\nIn RStudio: File → New Project → New Directory → New Project.\nGive it a name (e.g., my-journal-project) and save it somewhere you can find it.\n\n\n\nStep 2: Turn the Project into a Git Repository\nIn the RStudio Console, run this command:\nuse_git()\nThis will initialize a Git repository in your project folder. RStudio will ask to restart. Click “Yes.” When it reopens, you will see a Git tab in the top-right pane.\n\n\n\nGit Pane\n\n\n\n\nStep 3: Create a GitHub Repository and Connect It\nNow, tell usethis to create a repository on GitHub and connect your local project to it.\nuse_github()\nThis command will: 1. Ask if you want to commit the files you have. Say “Yes”. 2. Create a new, private repository on your GitHub account with the same name as your RStudio project. 3. Push your local files to the new GitHub repository.\nWhen it’s done, it will open a new browser tab showing you your new repository on GitHub, with your files already in it.\n\n\n\nPart 3: The Daily Workflow (Pull, Stage, Commit, Push)\nNow that your project is connected, here is the simple, day-to-day workflow for saving your work. This is a cycle you will repeat many times.\n\nPull: Before you start working, click the blue Pull arrow in the Git pane. This downloads the latest changes from your GitHub repository. This is crucial if you work on multiple computers or collaborate with others.\nDo Your Work: Edit your files, write your journal entries, analyze data, etc. Save your files as you normally would.\nStage Your Changes:\n\nGo to the Git pane. You will see a list of all the files you’ve modified since your last commit.\nCheck the boxes under the “Staged” column for all the files you want to include in your next save point. “Staging” files is like putting them in a box to get them ready to ship.\n\n\n\n\nRStudio Stage Window\n\n\nCommit Your Changes:\n\nClick the Commit button.\nA new window will open. In the “Commit message” box, write a short, descriptive message about what you changed (e.g., “Completed Week 3 journal entry”). This message is a log for your future self.\nClick Commit. This creates a “save point” (a commit) on your local computer. Your changes are not on GitHub yet.\n\n\n\n\nRStudio Commit Window\n\n\nPush to GitHub:\n\nClick the green Push arrow. This sends your committed changes from your local computer up to your GitHub repository, making them available online.\n\n\nThat’s it! You have successfully saved and backed up your work to GitHub.\n\n\nTroubleshooting\nHere are a few common issues you might encounter.\n\nuse_github() fails: If this command fails, it might be because a repository with that name already exists on GitHub. Make sure the name is unique. It could also fail if your PAT is incorrect. You can re-run gitcreds_set() to enter it again.\nAccidentally committed a large file: Git is not designed for large data files (e.g., &gt;100MB). If you accidentally commit one and the push fails, you will need to remove it from the repository’s history. The easiest way is to use the r-lib/bfg-manager package or follow GitHub’s official guide. The best practice is to add the paths to large files or data folders to a .gitignore file before you commit them.\nMerge Conflicts: If you Pull and get a “merge conflict,” it means you and a collaborator (or you on another computer) edited the same lines in the same file. RStudio will show you the conflicting sections in the file. You must manually edit the file to resolve the differences, save it, and then commit the resolved file.",
     "crumbs": [
       "Git & GitHub",
-      "Connecting to GitHub"
+      "Connecting RStudio, Git, and GitHub"
     ]
   },
   {
@@ -683,8 +690,8 @@
     "section": "",
     "text": "To verify student status on GitHub, you must ensure your GitHub profile information (username, email, full name) matches your provided academic documents.\nAlways use your school-issued academic email, provide legible photos of your student ID or enrollment documents, and disable any VPNs. If a VPN is required, try applying from your university’s Wi-Fi or campus network [1].",
     "crumbs": [
-      "Getting Started",
-      "GitHub Email Verification"
+      "Home",
+      "GitHub Verification Process"
     ]
   },
   {
@@ -694,8 +701,8 @@
     "section": "Before Applying",
     "text": "Before Applying\n\nMatch Profile Information\nMake sure the full name and email on your GitHub profile exactly match the information on the academic document you plan to submit [1, 7].\nUse an Academic Email\nApply using your official, school-issued email address. This is GitHub’s preferred method for verification [3, 7].\nDisable VPNs\nTurn off VPN services, since they can cause location-based verification to fail. If you must use a VPN, try applying from campus instead [4, 8].",
     "crumbs": [
-      "Getting Started",
-      "GitHub Email Verification"
+      "Home",
+      "GitHub Verification Process"
     ]
   },
   {
@@ -705,8 +712,8 @@
     "section": "During the Application",
     "text": "During the Application\n\nSubmit Clear Photos\nUse your device’s camera to capture your documents. Make sure your full name, school name, and current date are clearly legible [2, 5].\nUse School Wi-Fi\nApply from your university’s Wi-Fi or network if possible—this helps verify your location [6].\nCheck for System Errors\nIf you encounter a general system error, wait and try again later. If the problem persists, contact GitHub Education Support [1, 4].",
     "crumbs": [
-      "Getting Started",
-      "GitHub Email Verification"
+      "Home",
+      "GitHub Verification Process"
     ]
   },
   {
@@ -716,8 +723,8 @@
     "section": "If the Application is Rejected",
     "text": "If the Application is Rejected\n\nTry Alternative Documents\nIf one document type fails, try another—such as an official transcript or enrollment letter [7, 9].\nContact Support\nIf you repeatedly face issues or believe there is incorrect information in the system, submit a support ticket to GitHub Education [4].",
     "crumbs": [
-      "Getting Started",
-      "GitHub Email Verification"
+      "Home",
+      "GitHub Verification Process"
     ]
   },
   {
@@ -1034,7 +1041,7 @@
     "section": "",
     "text": "All commands assume you are working inside an RStudio Project.",
     "crumbs": [
-      "Getting Started",
+      "Home",
       "Function Details"
     ]
   },
@@ -1045,7 +1052,7 @@
     "section": "list_courses()",
     "text": "list_courses()\nlist_courses()\nReturns a character vector of course IDs (e.g., \"mc451\", \"mc501\"). If no courses are installed, returns an empty vector.",
     "crumbs": [
-      "Getting Started",
+      "Home",
       "Function Details"
     ]
   },
@@ -1056,7 +1063,7 @@
     "section": "list_weeks(course = NULL)",
     "text": "list_weeks(course = NULL)\nlist_weeks()         # all installed courses\nlist_weeks(\"mc451\")  # a specific course\nReturns folder names like \"week_01\", \"week_02\", … Empty if no weeks are installed for that course.",
     "crumbs": [
-      "Getting Started",
+      "Home",
       "Function Details"
     ]
   },
@@ -1067,7 +1074,7 @@
     "section": "download_week(course, week, dest = \".\")",
     "text": "download_week(course, week, dest = \".\")\ndownload_week(\"mc451\", 1, dest = \".\")   # accepts 1, \"01\", or \"week_01\"\n\nCreates dest/week_01/\nCopies that week’s files into the folder\nPreserves subfolders\nEmpty templates still create the folder but copy no files\n\nReturns (invisibly) a list:\nlist(dest, course, week, n_copied)",
     "crumbs": [
-      "Getting Started",
+      "Home",
       "Function Details"
     ]
   },
@@ -1078,7 +1085,7 @@
     "section": "open_week(week, dest = \".\")",
     "text": "open_week(week, dest = \".\")\nopen_week(1, dest = \".\")\nOpens dest/week_01/ in your system file browser.",
     "crumbs": [
-      "Getting Started",
+      "Home",
       "Function Details"
     ]
   },
@@ -1089,7 +1096,7 @@
     "section": "mccourse_setup(ask = TRUE, pkgs = c(...))",
     "text": "mccourse_setup(ask = TRUE, pkgs = c(...))\nmccourse_setup()   # safe to re-run\nEnsures that:\n\nQuarto is installed\nTinyTeX (LaTeX) is available for PDF output\nCore CRAN packages are installed",
     "crumbs": [
-      "Getting Started",
+      "Home",
       "Function Details"
     ]
   },
@@ -1100,7 +1107,7 @@
     "section": "mccourse_self_test()",
     "text": "mccourse_self_test()\nmccourse_self_test()\nRuns a basic check: prints which courses are installed and which weeks are available.",
     "crumbs": [
-      "Getting Started",
+      "Home",
       "Function Details"
     ]
   },
@@ -1111,7 +1118,7 @@
     "section": "mccourse_update()",
     "text": "mccourse_update()\nmccourse_update()\nUpdates mccoursepack to the latest GitHub build (Equivalent to running pak::pak(\"SIM-Lab-SIUE/mccoursepack\")).",
     "crumbs": [
-      "Getting Started",
+      "Home",
       "Function Details"
     ]
   },
@@ -1122,7 +1129,7 @@
     "section": "Common Patterns",
     "text": "Common Patterns\n\nAlways open your RStudio Project before using package commands.\nRender .qmd files to PDF (default) or HTML with Quarto.\nIf PDF rendering fails, run:\n\nmccourse_setup()\nto install TinyTeX and other dependencies.",
     "crumbs": [
-      "Getting Started",
+      "Home",
       "Function Details"
     ]
   },
@@ -1133,7 +1140,7 @@
     "section": "",
     "text": "This guide helps you solve common issues related to rendering PDF documents with Quarto and TinyTeX.",
     "crumbs": [
-      "Getting Started",
+      "Home",
       "PDF & TinyTeX Errors"
     ]
   },
@@ -1144,7 +1151,7 @@
     "section": "The Golden Rule: Use quarto install tinytex",
     "text": "The Golden Rule: Use quarto install tinytex\nThe most reliable way to set up a LaTeX environment for Quarto is to use Quarto’s built-in command.\n\nOpen the Terminal pane in RStudio (or your system’s terminal).\nRun the following command:\nquarto install tinytex\n\nThis will download and install a self-contained, correct version of LaTeX that Quarto knows how to use. If you have other LaTeX distributions on your system (like MiKTeX or MacTeX), this method avoids conflicts.\nIf you are prompted to update TinyTeX, it is usually safe to do so.",
     "crumbs": [
-      "Getting Started",
+      "Home",
       "PDF & TinyTeX Errors"
     ]
   },
@@ -1155,7 +1162,7 @@
     "section": "Common Error Messages and Solutions",
     "text": "Common Error Messages and Solutions\n\n“tlmgr: command not found” or “LaTeX failed to compile”\nThis is the most common error. It means that either LaTeX is not installed or Quarto cannot find it.\n\nSolution: Run quarto install tinytex as described above. If you have already installed it, try re-installing it. You may need to first run quarto uninstall tinytex.\n\n\n\n“Font … not found”\nThis error means the LaTeX distribution is missing a specific font package required by your document.\n\nSolution 1: Update TinyTeX. The package may have been added in a newer version. bash     quarto update tinytex\nSolution 2: Manually install the LaTeX package. Find the name of the missing package (the error message often gives a hint, like ...sty file). Then, use tlmgr (TinyTeX’s package manager) to install it. bash     # Example: Install the 'titling' package     tinytex::tlmgr_install(\"titling\")\n\n\n\nError on Windows with Special Characters in File Path\n\nProblem: On Windows, if your RStudio project is located in a folder with spaces or special characters (e.g., C:\\Users\\Alex (Work)\\My Project), LaTeX can sometimes fail.\nSolution: Try to use simple, space-free file paths for your R projects (e.g., C:\\Users\\Alex\\Documents\\R\\MyProject). This is a good practice in general for programming work.",
     "crumbs": [
-      "Getting Started",
+      "Home",
       "PDF & TinyTeX Errors"
     ]
   },
@@ -1166,7 +1173,7 @@
     "section": "General Troubleshooting Steps",
     "text": "General Troubleshooting Steps\n\nRender a minimal document. Create a new, blank Quarto document (.qmd) and try to render it to PDF. If it works, the problem is in your document’s content (e.g., a broken table or figure). If it fails, the problem is with your LaTeX installation.\n---\ntitle: \"Test\"\nformat: pdf\n---\n\nThis is a test.\nCheck for a clean environment. Make sure you don’t have conflicting LaTeX installations specified in your system’s PATH. Using quarto install tinytex is the best way to avoid this.\nReinstall TinyTeX. When in doubt, a fresh start often works. bash     quarto uninstall tinytex     quarto install tinytex",
     "crumbs": [
-      "Getting Started",
+      "Home",
       "PDF & TinyTeX Errors"
     ]
   },
