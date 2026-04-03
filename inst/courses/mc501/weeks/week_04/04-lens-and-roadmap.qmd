@@ -1,0 +1,119 @@
+---
+title: "Week 4: Lens and Roadmap"
+subtitle: "MC 451 Research Methods in Mass Media"
+date: "2026-09-15"
+format:
+  html:
+    embed-resources: true
+    toc: true
+    theme: cosmo
+  pdf:
+    toc: false
+    number-sections: false
+    colorlinks: true
+---
+
+## This Week
+
+This week you begin making the strategic decisions that define a research project. Chapter 5 asks you to choose a theoretical lens --- the framework that shapes what you look for and why it matters. Chapter 6 walks you through building a research roadmap: the timeline, milestones, and contingency plans that keep a semester-long project on track.
+
+**Reading:** Chapter 5 (Choosing Your Lens) and Chapter 6 (The Roadmap)
+
+---
+
+## What You Need to Do This Week
+
+### 1. Read Chapters 5 and 6
+
+As you read, consider:
+
+- How different theories frame the same media phenomenon in different ways
+- Why a roadmap is not just a schedule but a decision-making tool
+- How your proposed research topic from the Syllabus Contract connects to a specific theoretical tradition
+
+### 2. Schedule and Complete Your Librarian Consultation
+
+This must happen during Week 4. Do not wait until Thursday or Friday --- librarians have limited appointment slots. See the assignment details below.
+
+### 3. Complete the Librarian Visit Report Assignment (below)
+
+---
+
+## Assignment: Librarian Visit Report (50 pts)
+
+**Due:** Friday 11:59 PM | **Submit to:** Blackboard (PDF upload)
+
+### The Mission
+
+Meeting with a SIUE librarian is one of the most valuable steps in the early stages of a research project. This is not self-directed browsing --- it is a structured consultation with a professional who specializes in finding, evaluating, and organizing academic sources. Your librarian will help you identify databases, refine search terms, and assess whether your proposed data source can realistically support your research questions. The report you write afterward documents this consultation and demonstrates that you can evaluate the feasibility of a research project before committing to it.
+
+### Part 1: The Consultation (10 pts)
+
+Schedule and complete a one-on-one consultation with a SIUE librarian. You may meet in person at Lovejoy Library or via Zoom --- either format is acceptable.
+
+In your report, document:
+
+- **Librarian name** --- the person you met with
+- **Date of consultation** --- the specific date the meeting occurred
+- **Location or format** --- in-person (with location) or virtual (Zoom)
+
+To schedule, visit the [SIUE Library Research Help page](https://www.siue.edu/lovejoylibrary/research/) or email the reference desk directly.
+
+### Part 2: Databases and Search Strategies (30 pts)
+
+Write 200--300 words summarizing the consultation. Your summary must address:
+
+- **Databases recommended** --- which databases did the librarian suggest for your topic? (e.g., Communication & Mass Media Complete, PsycINFO, ProQuest, LexisNexis)
+- **Search strategies** --- what keywords, Boolean operators, or filtering techniques did the librarian demonstrate?
+- **Surprises or new discoveries** --- what did you learn that you did not expect? Did the librarian point you toward a database or strategy you had never considered?
+
+This section should read as a professional summary, not a transcript. Write in complete sentences and paragraphs.
+
+### Part 3: Feasibility Assessment (10 pts)
+
+Based on your consultation, assess whether your proposed data source is viable. Include:
+
+- **Chosen archive or platform** --- where will your content come from? (e.g., a specific subreddit, YouTube channel, news outlet, social media platform)
+- **Date range** --- what time period will you sample from?
+- **Content types** --- what kind of posts, articles, or media units will you analyze?
+- **Estimated volume** --- roughly how many units are available in your date range?
+- **Feasibility verdict** --- write 2--3 sentences stating whether this source can realistically answer your research questions, and why
+
+### Submission
+
+Render your report as a PDF via Quarto in RStudio. Upload the PDF to Blackboard.
+
+**File name:** `Lastname_LibrarianVisit.pdf`
+
+### Grading Criteria
+
+| Criterion | Points |
+|-----------|--------|
+| Consultation completed and documented (name, date, format) | 10 |
+| Databases and search strategies described clearly | 15 |
+| Surprises or new discoveries noted with substance | 15 |
+| Feasibility assessment includes all required elements and verdict | 10 |
+| **Total** | **50** |
+
+---
+
+## Connecting Forward
+
+Next week you will read Chapters 7 and 8 --- the research question and the ethics of inquiry. You will also complete your first close reading of a peer-reviewed article using Zotero, annotating variables and theory in a way that directly feeds your own project planning.
+
+---
+
+## Weekly Journal (10 pts)
+
+Your journal entry for this week is included in this download as `journal_week_04.qmd`. Open it in Obsidian, choose your reflection approach (Connector, Troubleshooter, or Critic), and write 250--300 words.
+
+**Due:** Friday 11:59 PM | **Submit:** Push to GitHub via GitHub Desktop, then submit rendered PDF to Blackboard.
+
+---
+
+## Getting Help
+
+- **Course website:** [Open Methods Hub](https://sim-lab-siue.github.io/liaison-program/) --- check here first
+- **Email:** aleith@siue.edu (allow 24 hours Mon--Fri)
+- **Office hours:** MW 10:00--11:30 AM and 1:30--3:00 PM, Dunham Hall 1017
+- **Discord:** APLeith

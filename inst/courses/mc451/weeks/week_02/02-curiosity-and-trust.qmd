@@ -1,46 +1,128 @@
 ---
-title: "Week 2: Curiosity & Trust"
-subtitle: "Chapters 1–2"
+title: "Week 2: Curiosity and Trust"
+subtitle: "MC 451 Research Methods in Mass Media"
 date: "2026-09-01"
 format:
   html:
     embed-resources: true
-    code-fold: true
-    code-tools: true
+    toc: true
+    theme: cosmo
+  pdf:
+    toc: false
+    number-sections: false
+    colorlinks: true
 ---
 
-## Overview
+## This Week
 
-This week introduces the foundational mindset of media research (Chapter 1) and why reproducibility is the infrastructure that makes research trustworthy (Chapter 2). You'll learn how everyday observations become researchable questions and set up the tools that document your decisions transparently.
+This week introduces the twin foundations of research: curiosity and trust. Chapter 1 explores how research questions emerge from genuine wonder about the world, while Chapter 2 examines the systems we build to ensure our findings are credible and reproducible.
 
-**Reading:** Chapter 1 — The Architecture of Curiosity & Chapter 2 — The Infrastructure of Trust
+**Reading:** Chapter 1 (The Architecture of Curiosity) and Chapter 2 (The Infrastructure of Trust)
 
-## Key Concepts
+---
 
-- Research as structured storytelling (Barrett, Storr)
-- Four unreliable ways of knowing: tradition, authority, common sense, intuition
-- The replication crisis (Open Science Collaboration, 2015)
-- Code as documentation (Knuth's literate programming)
-- The spectrum of reproducibility (Levels 0–4)
-- Tool stack: R, RStudio, Quarto, Git/GitHub, Obsidian
+## What You Need to Do This Week
 
-## Learning Objectives
+### 1. Read Chapters 1 and 2
 
-By the end of this week, you should be able to:
+Read both chapters before class. As you read, pay attention to:
 
-1. Distinguish anecdotal observation from systematic inquiry
-2. Explain why reproducibility matters for trustworthy research
-3. Identify the tools that support reproducible workflows
-4. Confirm your software installation by rendering a document
+- How everyday observations become formal research questions
+- The role of replication, transparency, and peer review in building trust
+- The difference between intuition and evidence
+- How the scientific method applies to mass communication research specifically
+
+Take notes in your Methods Vault as you go. Even informal bullet points in `00_Inbox/` will help you retain key concepts and prepare for your journal entry.
+
+### 2. Complete the Syllabus Contract Assignment (below)
+
+### 3. Continue Exploring Your Methods Vault
+
+Open Obsidian and familiarize yourself with the folder structure. You will begin journaling in Week 3, but this week is a good time to explore how notes connect. Try creating a new note in `00_Inbox/` with a few thoughts from the readings. Notice how Obsidian lets you link notes together using `[[double brackets]]` --- this feature will become central to your workflow.
+
+### 4. Verify Your Software Installation
+
+If you have not already confirmed that all software from Week 1 is working, do so now. Open RStudio and run:
+
+```r
+library(coursepackR)
+mccourse_check()
+```
+
+All checks should pass. If any fail, visit the [Get Started](https://sim-lab-siue.github.io/liaison-program/setup.html) guide or contact Dr. Leith before next week.
+
+---
 
 ## Assignment: Syllabus Contract (25 pts)
 
-1. Open the syllabus contract template in RStudio
-2. Fill in the acknowledgment fields
-3. Render to PDF — this confirms R, RStudio, and Quarto are working
-4. Submit to Blackboard
+**Due:** Friday 11:59 PM | **Submit to:** Blackboard (PDF upload)
 
-## Discussion Questions
+### The Mission
 
-1. What is the difference between "I noticed a pattern" and "I have evidence of a pattern"?
-2. Why might a researcher who gets "correct" results still be doing unreproducible science?
+The Syllabus Contract is your formal acknowledgment of the course policies, scientific workflow expectations, and academic integrity standards that govern MC 451. By completing and signing this document, you confirm that you have read the syllabus, understand the tools and expectations for the semester, and are prepared to engage with research methods as both a reader and a practitioner. This is not a formality --- it is your commitment to honest, rigorous work.
+
+### Step 1: Download the Template
+
+Download the `Syllabus_Contract` template from Blackboard or the [course website Resources page](https://sim-lab-siue.github.io/liaison-program/). The template is provided as a fillable PDF.
+
+### Step 2: Fill Out Your Details
+
+Complete every required field on the contract:
+
+- **Full Name** --- as it appears in the SIUE system
+- **Major / Minor** --- your current program of study
+- **Proposed Research Topic** --- a 1--2 sentence description of the topic you are curious about investigating this semester. This does not lock you in; it gives Dr. Leith a starting point for advising your project.
+
+### Step 3: Create a Formal Electronic Signature
+
+Your signature must be a genuine electronic signature --- not a typed name in a cursive font. Use one of the following methods:
+
+- **Adobe Acrobat:** Open the PDF, go to Fill & Sign, and create a Digital ID or draw your signature
+- **Mac Preview:** Open the PDF, click the Signature tool, and create a trackpad or camera signature
+- **Alternatives:** Any tool that produces a drawn or certificate-based signature is acceptable
+
+A typed name (e.g., "John Smith" in a text field) will not receive credit for the signature criterion.
+
+### Step 4: Save and Submit
+
+Render or save the completed contract as a PDF. Name the file using the convention below and upload it to Blackboard.
+
+### Submission
+
+Upload your completed contract as a PDF to Blackboard.
+
+**File name:** `Lastname_SyllabusContract.pdf`
+
+### Grading Criteria
+
+| Criterion | Points |
+|-----------|--------|
+| Format correct (PDF, readable, no missing pages) | 5 |
+| All required details filled in (name, major, topic) | 5 |
+| Electronic signature is valid (drawn or Digital ID) | 5 |
+| Proposed research topic is present and substantive | 5 |
+| File named correctly (`Lastname_SyllabusContract.pdf`) | 5 |
+| **Total** | **25** |
+
+---
+
+## Connecting Forward
+
+Next week you will read Chapters 3 and 4 --- the reading journal protocol and literature searching --- and initialize your Methods Vault as a GitHub repository. The GitHub profile you created in Week 1 becomes the home for your vault, so make sure your account is set up and working.
+
+---
+
+## Weekly Journal (10 pts)
+
+Your journal entry for this week is included in this download as `journal_week_02.qmd`. Open it in Obsidian, choose your reflection approach (Connector, Troubleshooter, or Critic), and write 250--300 words.
+
+**Due:** Friday 11:59 PM | **Submit:** Push to GitHub via GitHub Desktop, then submit rendered PDF to Blackboard.
+
+---
+
+## Getting Help
+
+- **Course website:** [Open Methods Hub](https://sim-lab-siue.github.io/liaison-program/) --- check here first
+- **Email:** aleith@siue.edu (allow 24 hours Mon--Fri)
+- **Office hours:** MW 10:00--11:30 AM and 1:30--3:00 PM, Dunham Hall 1017
+- **Discord:** APLeith

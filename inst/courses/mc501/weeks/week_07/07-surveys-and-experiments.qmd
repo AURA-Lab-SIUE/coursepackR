@@ -1,0 +1,123 @@
+---
+title: "Week 7: Surveys and Experiments"
+subtitle: "MC 451 Research Methods in Mass Media"
+date: "2026-10-06"
+format:
+  html:
+    embed-resources: true
+    toc: true
+    theme: cosmo
+  pdf:
+    toc: false
+    number-sections: false
+    colorlinks: true
+---
+
+## This Week
+
+This week examines two of the most widely used research designs in the social sciences. Chapter 11 walks through the logic of survey design --- from question wording to sampling --- while Chapter 12 introduces the experimental method and the power of controlled comparisons. Even though your semester project uses content analysis, understanding surveys and experiments helps you see how different designs answer different kinds of questions.
+
+**Reading:** Chapter 11 (Designing Surveys) and Chapter 12 (Designing Experiments)
+
+---
+
+## What You Need to Do This Week
+
+### 1. Read Chapters 11 and 12
+
+Read both chapters before class. As you read, pay attention to:
+
+- How survey questions can unintentionally bias responses
+- The difference between random assignment and random sampling
+- Why internal validity and external validity are often in tension
+- How each design answers a fundamentally different type of research question
+
+### 2. Complete the Topic Selection and Research Questions Assignment (below)
+
+### 3. Revisit Your Prospectus
+
+Your Prospectus from last week established the Topic, Theory, and Media Source. This week you sharpen the Topic into formal Research Questions. Keep your Prospectus open as you draft --- your RQs should flow directly from the three pillars you already defined.
+
+---
+
+## Assignment: Topic Selection and Research Questions (25 pts)
+
+**Due:** Friday 11:59 PM | **Submit to:** Blackboard (text entry or PDF upload)
+
+### The Mission
+
+Translate your broad interests into narrow, answerable research questions. A good research question is not a topic and not an opinion --- it is a precise inquiry that can be measured, tested, or systematically explored. This assignment moves you from vibes to a formalized inquiry that can guide every decision in your study, from variable selection to sampling to analysis.
+
+### What to Include
+
+Your submission must contain four components:
+
+#### 1. Topic Statement (2--3 sentences)
+
+State your research topic clearly and concisely. This should be more refined than your Prospectus --- you have had another week to think. Identify the media phenomenon, the context, and why it matters.
+
+#### 2. Formal Research Questions (minimum of 2)
+
+Write at least two Research Questions using standard academic format. Each RQ should be a single, focused question. Use structures like:
+
+- "How does [Source X] frame [Topic Y]?"
+- "What is the relationship between [Variable A] and [Variable B] in [Media Context]?"
+- "To what extent does [Pattern] appear in [Source] during [Time Period]?"
+
+Avoid yes/no questions. Avoid questions that assume an answer. Each RQ should be open-ended enough to let the data speak.
+
+**Common pitfalls to avoid:**
+
+- "Does social media cause depression?" --- Too broad, assumes causation, not tied to a specific source
+- "Is TikTok bad for teenagers?" --- Value-laden, not measurable, not a research question
+- "What percentage of headlines use conflict framing?" --- Better, but still missing a comparative or relational element
+
+#### 3. Variable Preview
+
+List the key variables your RQs imply. You do not need full definitions yet --- that comes next week --- but you should be able to name the concepts you will eventually measure. For example, if your RQ asks about framing, your variable preview might include "dominant frame type," "source quoted," and "article topic."
+
+Identify which variables are likely independent variables (IVs) and which are dependent variables (DVs).
+
+#### 4. Justification (1 paragraph)
+
+Explain why these questions matter and how they connect to the theory you identified in your Prospectus. A strong justification does three things: it links the RQs to a real-world problem, it connects them to scholarly theory, and it explains what we gain by answering them.
+
+### Submission
+
+Draft your work in Obsidian first. Submit the text of your RQs plus all four components to Blackboard. You may paste directly into the text box or upload a PDF --- either format is accepted.
+
+**File name (if PDF):** `Lastname_ResearchQuestions.pdf`
+
+### Grading Criteria
+
+| Criterion | Points |
+|-----------|--------|
+| Topic statement is clear, specific, and refined | 5 |
+| Research questions follow standard academic format | 5 |
+| Research questions are specific and measurable | 5 |
+| Variable preview is present with IV/DV identification | 5 |
+| Justification connects RQs to theory and real-world significance | 5 |
+| **Total** | **25** |
+
+---
+
+## Connecting Forward
+
+Next week you will read Chapters 13 and 14 --- Music Immersion and Vibes to Variables. These chapters mark the transition from thinking about your study to building it. You will learn how to translate abstract concepts into concrete, measurable definitions --- the skill that separates a good idea from a viable research design. The variables you previewed this week become the raw material for your Definitions Practice assignment.
+
+---
+
+## Weekly Journal (10 pts)
+
+Your journal entry for this week is included in this download as `journal_week_07.qmd`. Open it in Obsidian, choose your reflection approach (Connector, Troubleshooter, or Critic), and write 250--300 words.
+
+**Due:** Friday 11:59 PM | **Submit:** Push to GitHub via GitHub Desktop, then submit rendered PDF to Blackboard.
+
+---
+
+## Getting Help
+
+- **Course website:** [Open Methods Hub](https://sim-lab-siue.github.io/liaison-program/) --- check here first
+- **Email:** aleith@siue.edu (allow 24 hours Mon--Fri)
+- **Office hours:** MW 10:00--11:30 AM and 1:30--3:00 PM, Dunham Hall 1017
+- **Discord:** APLeith

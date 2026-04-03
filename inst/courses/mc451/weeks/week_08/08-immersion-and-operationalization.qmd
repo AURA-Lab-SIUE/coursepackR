@@ -1,35 +1,126 @@
 ---
-title: "Week 8: Immersion & Operationalization"
-subtitle: "Chapters 13-14"
+title: "Week 8: Immersion and Operationalization"
+subtitle: "MC 451 Research Methods in Mass Media"
 date: "2026-10-13"
 format:
   html:
     embed-resources: true
+    toc: true
+    theme: cosmo
+  pdf:
+    toc: false
+    number-sections: false
+    colorlinks: true
 ---
 
-## Overview
+## This Week
 
-The content analysis execution begins. Chapter 13 teaches immersion and memo writing. Chapter 14 bridges the gap between abstract concepts and measurable variables.
+This week is where the abstract becomes concrete. Chapter 13 guides you through an immersion process --- spending time with your media source before you code anything --- while Chapter 14 teaches you how to transform fuzzy intuitions into precise, measurable variables. Together, these chapters represent the most critical skill in content analysis: operationalization.
 
-**Reading:** Chapter 13 and Chapter 14
+**Reading:** Chapter 13 (Music Immersion) and Chapter 14 (Vibes to Variables)
 
-## Key Concepts
+---
 
-- Three modes of engagement: casual, focused, analytical
-- Memo writing: observational, methodological, theoretical, comparative
-- Manifest vs. latent content
-- The operationalization gap
-- Conceptual vs. operational definitions
-- NOIR levels of measurement
-- Reliability and validity
+## What You Need to Do This Week
 
-## Learning Objectives
+### 1. Read Chapters 13 and 14
 
-1. Immerse yourself in data using stratified sampling
-2. Write observational memos documenting patterns
-3. Define variables both conceptually and operationally
-4. Identify the level of measurement for any variable
+Read both chapters before class. As you read, pay attention to:
+
+- Why immersion must come before measurement
+- The difference between a conceptual definition and an operational definition
+- How vague ideas become coding categories with clear decision rules
+- The examples of operationalization failures and how to avoid them
+
+### 2. Complete the Definitions Practice Assignment (below)
+
+### 3. Spend Time with Your Media Source
+
+Before you define your variables, immerse yourself in the content you plan to analyze. Read, watch, or listen to at least 10--15 items from your media source. Take notes on patterns, surprises, and recurring themes. This qualitative immersion is not optional --- it is the foundation for every definition you write.
+
+---
 
 ## Assignment: Definitions Practice (25 pts)
 
-Define at least 4 variables with conceptual definitions, operational definitions, levels of measurement, coded values, and edge case decision rules.
+**Due:** Friday 11:59 PM | **Submit to:** Blackboard (text entry or screenshot)
+
+### The Mission
+
+Clarity is the soul of science. You must define exactly what you are looking for so that another researcher could replicate your work perfectly. This assignment forces you to translate your research intuitions into concrete, measurable language. The definitions you write here become the backbone of your codebook --- they are the bridge between your research questions and the data you will collect.
+
+### Background: What Are You Actually Defining?
+
+In content analysis, a **variable** is any characteristic of your media content that can take on different values. "Dominant frame" is a variable. "Article length" is a variable. "Presence of expert source" is a variable. Each variable needs two types of definition:
+
+- **Conceptual definition** --- What does this variable mean in theory? This is the abstract, scholarly definition grounded in your literature. For example, *Framing*: "the process by which a communication source defines and constructs a social issue" (Entman, 1993).
+
+- **Operational definition** --- How will you actually measure it? This is the concrete, step-by-step instruction a coder follows. For example, *Framing*: "coded based on the dominant metaphor present in the headline and first three paragraphs; classified as economic, moral, conflict, or human interest using the categories established by Semetko and Valkenburg (2000)."
+
+The gap between the conceptual and the operational is where research goes wrong. A brilliant concept with a sloppy operational definition produces meaningless data. This assignment is your practice at closing that gap.
+
+### Requirements
+
+#### Variable Definitions Table
+
+Create a Markdown table in Obsidian with the following columns:
+
+| Variable Name | Conceptual Definition | Operational Definition |
+|---------------|----------------------|------------------------|
+| ... | ... | ... |
+
+Your table must include:
+
+- **At least four variables** that correspond to the research questions you wrote last week
+- **At least one dependent variable (DV)** --- the outcome you are studying
+- **At least one independent variable (IV)** --- the factor you believe influences the DV
+- **Operational definitions specific enough that a stranger could code the same way you do.** If your definition requires judgment calls, it is not operational enough. Add category lists, threshold rules, or decision trees.
+
+#### Hard Cases Table
+
+Create a second table documenting edge cases and ambiguous situations:
+
+| Hard Case Description | Proposed Decision Rule |
+|-----------------------|----------------------|
+| ... | ... |
+
+Include at least three hard cases. These are situations where a coder might hesitate --- content that could fit multiple categories, items that are borderline, or formats that do not match your typical unit. For each case, write a clear rule that resolves the ambiguity.
+
+### Submission
+
+Copy your raw Markdown tables into the Blackboard submission text box, or submit a screenshot of the rendered tables from Obsidian Preview mode. Either format is accepted.
+
+**File name (if uploading):** `Lastname_DefinitionsPractice.pdf`
+
+### Grading Criteria
+
+| Criterion | Points |
+|-----------|--------|
+| All 4+ variables present and clearly named | 5 |
+| Conceptual definitions grounded in theory or literature | 5 |
+| Operational definitions specific and replicable | 5 |
+| Hard cases table present with at least 3 entries and decision rules | 5 |
+| Tables correctly formatted in Markdown | 5 |
+| **Total** | **25** |
+
+---
+
+## Connecting Forward
+
+Next week you will read Chapters 15 and 16 --- The Rulebook and The Sampling Plan and Pilot Test. The variable definitions you wrote this week become entries in your formal codebook, and the hard cases you identified become the decision rules section. You will also write a qualitative memo reflecting on how your immersion shaped the variables you chose. The codebook is the most important document in your project --- everything flows from it.
+
+---
+
+## Weekly Journal (10 pts)
+
+Your journal entry for this week is included in this download as `journal_week_08.qmd`. Open it in Obsidian, choose your reflection approach (Connector, Troubleshooter, or Critic), and write 250--300 words.
+
+**Due:** Friday 11:59 PM | **Submit:** Push to GitHub via GitHub Desktop, then submit rendered PDF to Blackboard.
+
+---
+
+## Getting Help
+
+- **Course website:** [Open Methods Hub](https://sim-lab-siue.github.io/liaison-program/) --- check here first
+- **Email:** aleith@siue.edu (allow 24 hours Mon--Fri)
+- **Office hours:** MW 10:00--11:30 AM and 1:30--3:00 PM, Dunham Hall 1017
+- **Discord:** APLeith

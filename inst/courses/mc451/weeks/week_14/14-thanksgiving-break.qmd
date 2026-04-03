@@ -1,12 +1,29 @@
 ---
 title: "Week 14: Thanksgiving Break"
-subtitle: "No Reading"
+subtitle: "No Reading Assigned"
 date: "2026-11-24"
 format:
   html:
     embed-resources: true
+    toc: true
+    theme: cosmo
+  pdf:
+    toc: false
+    number-sections: false
+    colorlinks: true
 ---
 
-## Thanksgiving Break
+## This Week
 
-No readings, assignments, or class meetings this week.
+No class, no reading, no assignments. Enjoy the break.
+
+If you want to get ahead, open the `mc451-final-project` template and start dropping your writing into the pre-built `.qmd` files. The more you finish now, the less you scramble during finals.
+
+---
+
+## Getting Help
+
+- **Course website:** [Open Methods Hub](https://sim-lab-siue.github.io/liaison-program/) --- check here first
+- **Email:** aleith@siue.edu (allow 24 hours Mon--Fri)
+- **Office hours:** Resume after break
+- **Discord:** APLeith

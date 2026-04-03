@@ -1,0 +1,124 @@
+---
+title: "Week 1: Syllabus and Introductions"
+subtitle: "MC 451 Research Methods in Mass Media"
+date: "2026-08-25"
+format:
+  html:
+    embed-resources: true
+    toc: true
+    theme: cosmo
+  pdf:
+    toc: false
+    number-sections: false
+    colorlinks: true
+---
+
+## This Week
+
+Welcome to MC 451. This week is about getting oriented: understanding the course structure, meeting your classmates, and setting up the tools you will use all semester.
+
+There is no textbook reading this week. Focus on the setup tasks below.
+
+---
+
+## What You Need to Do This Week
+
+### 1. Review the Course Website
+
+Visit the [Open Methods Hub](https://sim-lab-siue.github.io/liaison-program/) and read:
+
+- The [Syllabus](https://sim-lab-siue.github.io/liaison-program/syllabus.html) (schedule, grading, policies)
+- The [How It Works](https://sim-lab-siue.github.io/liaison-program/how-it-works.html) page (how the four tools connect)
+- The [Get Started](https://sim-lab-siue.github.io/liaison-program/setup.html) guide (workspace setup)
+
+### 2. Install Required Software
+
+All software is free. Follow the installation guides on the course website:
+
+- **Obsidian** ([obsidian.md](https://obsidian.md/)) --- personal knowledge management
+- **GitHub Desktop** ([desktop.github.com](https://desktop.github.com/)) --- version control without the command line
+- **R** ([cran.r-project.org](https://cran.r-project.org/)) --- statistical computing (install now; you will use it starting Week 10)
+- **RStudio** ([posit.co](https://posit.co/download/rstudio-desktop/)) --- IDE for R and Quarto
+
+### 3. Download and Open the Methods Vault
+
+The Methods Vault is your Obsidian workspace for the semester. Download it from the course website Resources page, unzip it, and open it in Obsidian. Verify you see all numbered folders:
+
+`00_Inbox/`, `01_Journal/`, `02_Literature/`, `03_Project/`, `04_Resources/`, `05_Textbook/`, `99_Templates/`
+
+### 4. Install coursepackR
+
+In RStudio, run:
+
+```r
+install.packages("remotes")
+remotes::install_github("SIM-Lab-SIUE/coursepackR")
+library(coursepackR)
+mccourse_setup()
+mccourse_check()
+```
+
+If all 8 checks pass, your environment is ready.
+
+---
+
+## Assignment: GitHub Profile (25 pts)
+
+**Due:** Friday 11:59 PM | **Submit to:** Blackboard (URL + comment)
+
+### The Mission
+
+Establish your digital identity for research and code projects. GitHub is the industry standard for hosting code and showcasing professional portfolios. The profile you create this week will become the home for your journal entries, R assignments, and final portfolio.
+
+### Step 1: Create Your Account
+
+1. Go to [github.com](https://github.com) and create a free account
+2. Choose a **professional username** (this will be your public identity --- first initial + last name is a safe choice)
+3. Add a profile photo and a short bio
+
+### Step 2: Apply for the Student Developer Pack
+
+1. Go to [education.github.com/pack](https://education.github.com/pack)
+2. Apply using your SIUE email for free Pro tools and GitHub Copilot
+3. Note your application status in the submission comments
+
+### Step 3: Create Your Profile README
+
+1. Create a new **Public** repository named **exactly** after your GitHub username
+2. Check "Add a README file" during creation
+3. Edit the `README.md` to include:
+   - Your name and academic program
+   - A brief statement of your research interests
+   - What you hope to learn in this course
+4. Use Markdown formatting: `#` for headers, `**bold**`, `-` for lists
+
+### Submission
+
+- Submit your profile URL (e.g., `https://github.com/username`) to Blackboard
+- Confirm your Student Developer Pack application status in the comments
+
+### Grading Criteria
+
+| Criterion | Points |
+|-----------|--------|
+| Account created with professional username and photo | 5 |
+| Student Developer Pack application confirmed | 5 |
+| Profile README repository exists and is public | 5 |
+| README includes name, program, interests, and course goals | 5 |
+| Markdown formatting used correctly | 5 |
+| **Total** | **25** |
+
+---
+
+## Connecting Forward
+
+Next week you will read Chapters 1 and 2 of the textbook and submit the Syllabus Contract, which confirms your software installation is working. The GitHub profile you created this week will become the repository for your journal entries starting in Week 3.
+
+---
+
+## Getting Help
+
+- **Course website:** [Open Methods Hub](https://sim-lab-siue.github.io/liaison-program/) --- check here first
+- **Email:** aleith@siue.edu (allow 24 hours Mon--Fri)
+- **Office hours:** MW 10:00--11:30 AM and 1:30--3:00 PM, Dunham Hall 1017
+- **Discord:** APLeith

@@ -5,8 +5,54 @@ date: "2026-12-08"
 format:
   html:
     embed-resources: true
+    toc: true
+    theme: cosmo
+  pdf:
+    toc: false
+    number-sections: false
+    colorlinks: true
 ---
 
-## Work Week
+## This Week
 
-No class meetings. Assemble and polish your final portfolio. Render, push, test.
+No class meetings. No new readings. This entire week is dedicated to assembling, rendering, and publishing your final portfolio. Use the time wisely --- everything is due next week.
+
+---
+
+## Work Week Checklist
+
+Use this checklist to track your progress:
+
+- [ ] **Finalize all six sections** of your Quarto Book project (Introduction, Literature Review, Method, Results, Discussion, References)
+- [ ] **Render frequently** to catch errors early --- do not wait until the last day
+- [ ] **Push to GitHub** and enable GitHub Pages (Settings > Pages > Source: main branch, /docs folder)
+- [ ] **Test your live URL** in a private/incognito browser window to confirm it loads correctly
+- [ ] **Delete all instruction comments** from your `.qmd` files (anything marked `<!-- ... -->`)
+- [ ] **Check figure captions,** table labels, and in-text citations
+- [ ] **Verify your references.bib** includes every source you cite and no extras
+- [ ] **Rename your PDF** to `Lastname_FinalPortfolio.pdf` before uploading to Blackboard
+
+---
+
+## Common Render Errors
+
+If your project fails to render, check this table first:
+
+| Error Message | Likely Cause | Fix |
+|---------------|-------------|-----|
+| `object 'x' not found` | A variable name is misspelled or the code chunk that creates it did not run | Check spelling; make sure chunks run in order from top to bottom |
+| `cannot open file 'coding_data_clean.RDS'` | The RDS file is not in the project folder | Copy `coding_data_clean.RDS` into the root of your project directory |
+| `citation 'key' not found` | The citation key in your text does not match any entry in `references.bib` | Open `references.bib` and confirm the key exists exactly as typed |
+| `apa.csl not found` | The CSL file is missing from the project folder | Download `apa.csl` from the course website or Zotero Style Repository and place it in the project root |
+| `there is no package called 'x'` | A required package is not installed | Run `install.packages("x")` in the RStudio console |
+
+---
+
+## Getting Help
+
+Dr. Leith is available by email and Discord all week. Do not wait until Friday night to troubleshoot render errors.
+
+- **Course website:** [Open Methods Hub](https://sim-lab-siue.github.io/liaison-program/) --- check here first
+- **Email:** aleith@siue.edu (allow 24 hours Mon--Fri)
+- **Office hours:** MW 10:00--11:30 AM and 1:30--3:00 PM, Dunham Hall 1017 (available remotely by appointment)
+- **Discord:** APLeith
