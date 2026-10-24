@@ -1,10 +1,11 @@
 #' Unified Music Dataset
 #'
 #' A curated dataset combining Billboard chart performance, Spotify audio
-#' features, and Genius metadata for 1,792 songs. Used throughout
+#' features, and Genius metadata for 1,792 songs. Song lyrics are not
+#' included because they are copyrighted works. Used throughout
 #' "From Vibes to Variables" for teaching data analysis and research methods.
 #'
-#' @format A data frame with 1,792 rows and 36 variables:
+#' @format A data frame with 1,792 rows and 35 variables:
 #' \describe{
 #'   \item{Song}{Song title}
 #'   \item{Artist}{Artist name}
@@ -40,12 +41,15 @@
 #'   \item{year}{Release year}
 #'   \item{views}{Genius page view count}
 #'   \item{features}{Featured artists}
-#'   \item{lyrics}{Song lyrics text}
 #'   \item{id}{Genius song identifier}
 #' }
 #'
-#' @source Compiled from Billboard, Spotify Web API, and Genius API data.
-#'   See the textbook for full methodology.
+#' @source Compiled from Billboard Hot 100 chart data, the Spotify Web API,
+#'   and the Genius API. Each source's values remain subject to that
+#'   source's own terms (the Billboard terms of use, the Spotify Developer
+#'   Terms, and the Genius API terms); the package's MIT license covers the
+#'   code, not the third-party data. Song lyrics are not distributed. See
+#'   the textbook for full methodology.
 #' @examples
 #' data(unified_music)
 #' head(unified_music)

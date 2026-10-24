@@ -1,4 +1,5 @@
-# Prepare the unified music dataset for inclusion in the package
+# Prepare the unified music dataset for inclusion in the package.
+# The source CSV is not distributed with the package (it carries lyrics).
 # Run this script from the package root directory:
 #   source("data-raw/prepare_dataset.R")
 
@@ -12,5 +13,8 @@ unified_music <- read.csv(
 cat("Rows:", nrow(unified_music), "\n")
 cat("Cols:", ncol(unified_music), "\n")
 cat("Column names:", paste(names(unified_music), collapse = ", "), "\n")
+
+# Song lyrics are copyrighted works and are not redistributed: drop them.
+unified_music$lyrics <- NULL
 
 usethis::use_data(unified_music, overwrite = TRUE, compress = "xz")
