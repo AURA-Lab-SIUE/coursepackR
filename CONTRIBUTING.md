@@ -42,12 +42,14 @@ describing:
 3.  **Install development dependencies**:
 
     ``` r
+
     install.packages(c("devtools", "roxygen2", "testthat", "pkgdown"))
     ```
 
 4.  **Load the package** for interactive development:
 
     ``` r
+
     devtools::load_all()
     ```
 
@@ -87,18 +89,21 @@ describing:
 3.  **Rebuild documentation** if you changed any roxygen2 comments:
 
     ``` r
+
     devtools::document()
     ```
 
 4.  **Run tests**:
 
     ``` r
+
     devtools::test()
     ```
 
 5.  **Run R CMD check**:
 
     ``` r
+
     devtools::check()
     ```
 

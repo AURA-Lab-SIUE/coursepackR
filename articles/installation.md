@@ -19,6 +19,7 @@ on the course website.
 Check your R version:
 
 ``` r
+
 R.version.string
 #> [1] "R version 4.5.2 (2025-10-22)"
 ```
@@ -30,6 +31,7 @@ If your version is below 4.1, download the latest R before proceeding.
 coursepackR is hosted on GitHub. Install it with the `remotes` package:
 
 ``` r
+
 # Install remotes if you don't have it
 install.packages("remotes")
 
@@ -57,6 +59,7 @@ connections.
 After installing, run the one-time setup function:
 
 ``` r
+
 library(coursepackR)
 mccourse_setup()
 ```
@@ -92,6 +95,7 @@ This ensures Quarto and any new packages are properly detected.
 Run the diagnostic check to confirm everything is working:
 
 ``` r
+
 mccourse_check()
 ```
 
@@ -129,6 +133,7 @@ with a suggested fix.
 Check for updates at any time:
 
 ``` r
+
 mccourse_update()
 ```
 
@@ -139,6 +144,7 @@ install it.
 You can also force a reinstall:
 
 ``` r
+
 remotes::install_github("SIM-Lab-SIUE/coursepackR")
 ```
 
@@ -147,6 +153,7 @@ remotes::install_github("SIM-Lab-SIUE/coursepackR")
 To remove coursepackR:
 
 ``` r
+
 remove.packages("coursepackR")
 ```
 
@@ -155,5 +162,6 @@ This does not remove TinyTeX or other packages installed by
 To remove TinyTeX separately:
 
 ``` r
+
 tinytex::uninstall_tinytex()
 ```

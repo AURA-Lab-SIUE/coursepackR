@@ -7,8 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>coursepackR - Course Tools for From Vibes to Variables • coursepackR</title>
 <script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
-<script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="deps/Inter-0.4.10/font.css" rel="stylesheet">
+<link href="deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
+<script src="deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="deps/Inter-0.4.10/font.css" rel="stylesheet">
 <link href="deps/Source_Code_Pro-0.4.10/font.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
@@ -110,48 +110,48 @@
 <col width="43%">
 <col width="56%">
 </colgroup>
-<thead><tr class="header">
+<thead><tr>
 <th>Function</th>
 <th>Description</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td><code><a href="reference/mccourse_setup.html">mccourse_setup()</a></code></td>
 <td>One-time environment setup — checks compiler toolchain (Rtools/Xcode CLT), Quarto CLI version, TinyTeX, and installs all course R packages</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code><a href="reference/mccourse_check.html">mccourse_check()</a></code></td>
 <td>Diagnostic check — verifies R version, RStudio, Quarto (&gt;= 1.4.0), Git, compiler toolchain, course packages, templates, and working directory path safety</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><code><a href="reference/mccourse_update.html">mccourse_update()</a></code></td>
 <td>Check for and install package updates from GitHub</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code><a href="reference/download_week.html">download_week()</a></code></td>
 <td>Download a specific week’s assignment template to your working directory</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><code>download_workbook()</code></td>
 <td>Download the R Workbook — guided practice covering Chapters 17-22</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code><a href="reference/download_journal.html">download_journal()</a></code></td>
 <td>Download the reflective journal template for a given week</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><code><a href="reference/open_week.html">open_week()</a></code></td>
 <td>Open a downloaded week’s folder in your system file browser</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code><a href="reference/final_project.html">final_project()</a></code></td>
 <td>Scaffold a final project folder with Quarto document, bibliography, and data directory</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><code><a href="reference/list_courses.html">list_courses()</a></code></td>
 <td>List all available course IDs bundled in the package</td>
 </tr>
-<tr class="even">
+<tr>
 <td><code><a href="reference/list_weeks.html">list_weeks()</a></code></td>
 <td>List all available weeks for a given course</td>
 </tr>
@@ -161,19 +161,19 @@
 <div class="section level3">
 <h3 id="dataset">Dataset<a class="anchor" aria-label="anchor" href="#dataset"></a>
 </h3>
-<p>The <code>unified_music</code> dataset contains <strong>1,792 songs</strong> with <strong>36 variables</strong> from three sources:</p>
+<p>The <code>unified_music</code> dataset contains <strong>1,792 songs</strong> with <strong>35 variables</strong> from three sources:</p>
 <ul>
 <li>
 <strong>Billboard</strong> — chart rank, weeks on board, chart entry/exit dates</li>
 <li>
 <strong>Spotify</strong> — audio features (danceability, energy, valence, tempo, loudness, etc.)</li>
 <li>
-<strong>Genius</strong> — page views, lyrics, featured artists</li>
+<strong>Genius</strong> — page views, featured artists (lyrics are copyrighted and not included)</li>
 </ul>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">unified_music</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/dim.html" class="external-link">dim</a></span><span class="op">(</span><span class="va">unified_music</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] 1792   36</span></span></code></pre></div>
+<span><span class="co">#&gt; [1] 1792   35</span></span></code></pre></div>
 <p>See the <a href="https://sim-lab-siue.github.io/coursepackR/articles/unified-music-codebook.html">Unified Music Dataset vignette</a> for the full variable reference and example analyses.</p>
 </div>
 <div class="section level3">
@@ -239,7 +239,7 @@
 ├── R/                    # Package functions
 ├── man/                  # Auto-generated help pages
 ├── data/                 # unified_music.rda (lazy-loaded)
-├── data-raw/             # Source CSV and preparation script
+├── data-raw/             # Preparation script (the source CSV is not distributed)
 ├── inst/
 │   ├── textbook/         # 22 markdown chapters (offline access)
 │   └── courses/mc451/
@@ -260,20 +260,20 @@
 <col width="46%">
 <col width="21%">
 </colgroup>
-<thead><tr class="header">
+<thead><tr>
 <th>Project</th>
 <th>Description</th>
 <th>Link</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td><strong>Open Methods Hub</strong></td>
 <td>Course website — syllabus, R workbook (with videos), Methods Vault, setup guides</td>
 <td>
 <a href="https://sim-lab-siue.github.io/liaison-program/" class="external-link">Visit Site</a> | <a href="https://github.com/SIM-Lab-SIUE/liaison-program" class="external-link">GitHub</a>
 </td>
 </tr>
-<tr class="even">
+<tr>
 <td><strong>vibes-to-variables</strong></td>
 <td>Open textbook — <em>From Vibes to Variables</em> (2nd Ed., 22 chapters)</td>
 <td>
@@ -287,7 +287,7 @@
 <div class="section level2">
 <h2 id="license">License<a class="anchor" aria-label="anchor" href="#license"></a>
 </h2>
-<p>MIT</p>
+<p>The package code is released under the MIT License (see <code>LICENSE.md</code>). The textbook chapters in <code>inst/textbook/</code> are licensed CC BY 4.0 (see <code>inst/textbook/LICENSE</code>). The <code>unified_music</code> values come from Billboard, the Spotify Web API, and Genius and remain subject to those sources’ own terms; song lyrics are not included.</p>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">
@@ -338,7 +338,7 @@
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.1.</p>
 </div>
 
     </footer>

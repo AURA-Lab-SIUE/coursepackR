@@ -7,8 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>The Unified Music Dataset • coursepackR</title>
 <script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="../deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
-<script src="../deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="../deps/Inter-0.4.10/font.css" rel="stylesheet">
+<link href="../deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
+<script src="../deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="../deps/Inter-0.4.10/font.css" rel="stylesheet">
 <link href="../deps/Source_Code_Pro-0.4.10/font.css" rel="stylesheet">
 <link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="../deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
@@ -78,7 +78,7 @@ analyses.</p>
 <div class="section level2">
 <h2 id="overview">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
 </h2>
-<p>The dataset contains <strong>1,792 songs</strong> with <strong>36
+<p>The dataset contains <strong>1,792 songs</strong> with <strong>35
 variables</strong> drawn from three public sources:</p>
 <ul>
 <li>
@@ -89,8 +89,8 @@ the chart, and chart entry/exit dates</li>
 energy, valence, etc.), track metadata, and playlist
 classifications</li>
 <li>
-<strong>Genius</strong> — Page view counts, featured artists, and
-lyrics text</li>
+<strong>Genius</strong> — Page view counts and featured artists
+(song lyrics are copyrighted and are not included)</li>
 </ul>
 </div>
 <div class="section level2">
@@ -101,7 +101,7 @@ lyrics text</li>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">unified_music</span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/dim.html" class="external-link">dim</a></span><span class="op">(</span><span class="va">unified_music</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] 1792   36</span></span>
+<span><span class="co">#&gt; [1] 1792   35</span></span>
 <span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">unified_music</span><span class="op">)</span></span></code></pre></div>
 <p>The dataset is lazy-loaded and compressed with xz, so it’s available
@@ -359,7 +359,7 @@ strength)</td>
 </table>
 </div>
 <div class="section level3">
-<h3 id="genius-metadata-4-variables">Genius Metadata (4 variables)<a class="anchor" aria-label="anchor" href="#genius-metadata-4-variables"></a>
+<h3 id="genius-metadata-3-variables">Genius Metadata (3 variables)<a class="anchor" aria-label="anchor" href="#genius-metadata-3-variables"></a>
 </h3>
 <table class="table">
 <thead><tr class="header">
@@ -382,11 +382,6 @@ strength)</td>
 <td><code>features</code></td>
 <td>character</td>
 <td>Featured artists (if any)</td>
-</tr>
-<tr class="even">
-<td><code>lyrics</code></td>
-<td>character</td>
-<td>Full song lyrics text</td>
 </tr>
 </tbody>
 </table>
@@ -469,9 +464,6 @@ course.</p>
 different <code>playlist_genre</code> or <code>playlist_subgenre</code>
 values.</li>
 <li>
-<code>lyrics</code> may be <code>NA</code> for songs where Genius
-did not have lyrics available.</li>
-<li>
 <code>views</code> reflects page views at the time of data
 collection and may not reflect current counts.</li>
 <li>
@@ -510,7 +502,7 @@ variable list</li>
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.1.</p>
 </div>
 
     </footer>

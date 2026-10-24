@@ -13,6 +13,7 @@ Open Media Science](https://sim-lab-siue.github.io/vibes-to-variables/)*
 ## Install
 
 ``` r
+
 # Install remotes if you don't have it
 install.packages("remotes")
 
@@ -25,6 +26,7 @@ Requires **R \>= 4.1**. RStudio Desktop is recommended but not required.
 ## Quick Start
 
 ``` r
+
 library(coursepackR)
 
 # 1. First-time setup (installs Quarto, TinyTeX, and all course packages)
@@ -50,33 +52,35 @@ head(unified_music)
 
 ### Functions
 
-| Function                                                                                         | Description                                                                                                                                                |
-|--------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [`mccourse_setup()`](https://sim-lab-siue.github.io/coursepackR/reference/mccourse_setup.md)     | One-time environment setup — checks compiler toolchain (Rtools/Xcode CLT), Quarto CLI version, TinyTeX, and installs all course R packages                 |
-| [`mccourse_check()`](https://sim-lab-siue.github.io/coursepackR/reference/mccourse_check.md)     | Diagnostic check — verifies R version, RStudio, Quarto (\>= 1.4.0), Git, compiler toolchain, course packages, templates, and working directory path safety |
-| [`mccourse_update()`](https://sim-lab-siue.github.io/coursepackR/reference/mccourse_update.md)   | Check for and install package updates from GitHub                                                                                                          |
-| [`download_week()`](https://sim-lab-siue.github.io/coursepackR/reference/download_week.md)       | Download a specific week’s assignment template to your working directory                                                                                   |
-| `download_workbook()`                                                                            | Download the R Workbook — guided practice covering Chapters 17-22                                                                                          |
-| [`download_journal()`](https://sim-lab-siue.github.io/coursepackR/reference/download_journal.md) | Download the reflective journal template for a given week                                                                                                  |
-| [`open_week()`](https://sim-lab-siue.github.io/coursepackR/reference/open_week.md)               | Open a downloaded week’s folder in your system file browser                                                                                                |
-| [`final_project()`](https://sim-lab-siue.github.io/coursepackR/reference/final_project.md)       | Scaffold a final project folder with Quarto document, bibliography, and data directory                                                                     |
-| [`list_courses()`](https://sim-lab-siue.github.io/coursepackR/reference/list_courses.md)         | List all available course IDs bundled in the package                                                                                                       |
-| [`list_weeks()`](https://sim-lab-siue.github.io/coursepackR/reference/list_weeks.md)             | List all available weeks for a given course                                                                                                                |
+| Function | Description |
+|----|----|
+| [`mccourse_setup()`](https://sim-lab-siue.github.io/coursepackR/reference/mccourse_setup.md) | One-time environment setup — checks compiler toolchain (Rtools/Xcode CLT), Quarto CLI version, TinyTeX, and installs all course R packages |
+| [`mccourse_check()`](https://sim-lab-siue.github.io/coursepackR/reference/mccourse_check.md) | Diagnostic check — verifies R version, RStudio, Quarto (\>= 1.4.0), Git, compiler toolchain, course packages, templates, and working directory path safety |
+| [`mccourse_update()`](https://sim-lab-siue.github.io/coursepackR/reference/mccourse_update.md) | Check for and install package updates from GitHub |
+| [`download_week()`](https://sim-lab-siue.github.io/coursepackR/reference/download_week.md) | Download a specific week’s assignment template to your working directory |
+| `download_workbook()` | Download the R Workbook — guided practice covering Chapters 17-22 |
+| [`download_journal()`](https://sim-lab-siue.github.io/coursepackR/reference/download_journal.md) | Download the reflective journal template for a given week |
+| [`open_week()`](https://sim-lab-siue.github.io/coursepackR/reference/open_week.md) | Open a downloaded week’s folder in your system file browser |
+| [`final_project()`](https://sim-lab-siue.github.io/coursepackR/reference/final_project.md) | Scaffold a final project folder with Quarto document, bibliography, and data directory |
+| [`list_courses()`](https://sim-lab-siue.github.io/coursepackR/reference/list_courses.md) | List all available course IDs bundled in the package |
+| [`list_weeks()`](https://sim-lab-siue.github.io/coursepackR/reference/list_weeks.md) | List all available weeks for a given course |
 
 ### Dataset
 
-The `unified_music` dataset contains **1,792 songs** with **36
+The `unified_music` dataset contains **1,792 songs** with **35
 variables** from three sources:
 
 - **Billboard** — chart rank, weeks on board, chart entry/exit dates
 - **Spotify** — audio features (danceability, energy, valence, tempo,
   loudness, etc.)
-- **Genius** — page views, lyrics, featured artists
+- **Genius** — page views, featured artists (lyrics are copyrighted and
+  not included)
 
 ``` r
+
 data(unified_music)
 dim(unified_music)
-#> [1] 1792   36
+#> [1] 1792   35
 ```
 
 See the [Unified Music Dataset
@@ -89,6 +93,7 @@ All 22 chapters of *From Vibes to Variables* (2nd Edition) are bundled
 for offline reading:
 
 ``` r
+
 # Path to chapter 1
 system.file("textbook", "chapter01.md", package = "coursepackR")
 ```
@@ -102,6 +107,7 @@ Read the full book online at
 22-chapter textbook:
 
 ``` r
+
 list_weeks("mc451")
 download_week("mc451", 1)
 ```
@@ -115,12 +121,14 @@ Each week during the semester:
 1.  **Download** this week’s template:
 
     ``` r
+
     download_week("mc451", 3)
     ```
 
 2.  **Open** the folder:
 
     ``` r
+
     open_week(3)
     ```
 
@@ -133,6 +141,7 @@ Each week during the semester:
 5.  **Reflect** in your journal:
 
     ``` r
+
     download_journal(3)
     ```
 
@@ -186,7 +195,7 @@ files. Delete or rename the old folder if you want a fresh copy.
     ├── R/                    # Package functions
     ├── man/                  # Auto-generated help pages
     ├── data/                 # unified_music.rda (lazy-loaded)
-    ├── data-raw/             # Source CSV and preparation script
+    ├── data-raw/             # Preparation script (the source CSV is not distributed)
     ├── inst/
     │   ├── textbook/         # 22 markdown chapters (offline access)
     │   └── courses/mc451/
@@ -201,13 +210,17 @@ files. Delete or rename the old folder if you want a fresh copy.
 
 ## Related Projects
 
-| Project                | Description                                                                      | Link                                                                                                                              |
-|------------------------|----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| **Open Methods Hub**   | Course website — syllabus, R workbook (with videos), Methods Vault, setup guides | [Visit Site](https://sim-lab-siue.github.io/liaison-program/) \| [GitHub](https://github.com/SIM-Lab-SIUE/liaison-program)        |
-| **vibes-to-variables** | Open textbook — *From Vibes to Variables* (2nd Ed., 22 chapters)                 | [Read Online](https://sim-lab-siue.github.io/vibes-to-variables/) \| [GitHub](https://github.com/SIM-Lab-SIUE/vibes-to-variables) |
+| Project | Description | Link |
+|----|----|----|
+| **Open Methods Hub** | Course website — syllabus, R workbook (with videos), Methods Vault, setup guides | [Visit Site](https://sim-lab-siue.github.io/liaison-program/) \| [GitHub](https://github.com/SIM-Lab-SIUE/liaison-program) |
+| **vibes-to-variables** | Open textbook — *From Vibes to Variables* (2nd Ed., 22 chapters) | [Read Online](https://sim-lab-siue.github.io/vibes-to-variables/) \| [GitHub](https://github.com/SIM-Lab-SIUE/vibes-to-variables) |
 
 ------------------------------------------------------------------------
 
 ## License
 
-MIT
+The package code is released under the MIT License (see `LICENSE.md`).
+The textbook chapters in `inst/textbook/` are licensed CC BY 4.0 (see
+`inst/textbook/LICENSE`). The `unified_music` values come from
+Billboard, the Spotify Web API, and Genius and remain subject to those
+sources’ own terms; song lyrics are not included.

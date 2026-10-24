@@ -10,13 +10,13 @@ MC-451 runs 17 weeks. Each week has a Quarto assignment template that
 aligns with a textbook chapter. The coursepackR functions map directly
 to this schedule:
 
-| Weeks | Phase         | What You Do                                                 |
-|-------|---------------|-------------------------------------------------------------|
-| 1–4   | Foundations   | Read chapters, set up tools, practice critical reading      |
-| 5–7   | Design        | Choose a theory, write a research question, plan your study |
-| 8–11  | Measurement   | Immerse in data, build a codebook, run a pilot test         |
-| 12–15 | Analysis      | Wrangle data in R, visualize, run statistics, interpret     |
-| 16–17 | Communication | Build a portfolio, present your work openly                 |
+| Weeks | Phase | What You Do |
+|----|----|----|
+| 1–4 | Foundations | Read chapters, set up tools, practice critical reading |
+| 5–7 | Design | Choose a theory, write a research question, plan your study |
+| 8–11 | Measurement | Immerse in data, build a codebook, run a pilot test |
+| 12–15 | Analysis | Wrangle data in R, visualize, run statistics, interpret |
+| 16–17 | Communication | Build a portfolio, present your work openly |
 
 ## Weekly Workflow
 
@@ -25,6 +25,7 @@ Each week follows the same pattern:
 ### Step 1: Check what’s available
 
 ``` r
+
 library(coursepackR)
 list_weeks("mc451")
 ```
@@ -34,6 +35,7 @@ This returns a sorted vector of week numbers (1 through 17).
 ### Step 2: Download this week’s template
 
 ``` r
+
 download_week("mc451", 1)
 ```
 
@@ -48,6 +50,7 @@ want a fresh copy.
 ### Step 3: Open the folder
 
 ``` r
+
 open_week(1)
 ```
 
@@ -70,6 +73,7 @@ when you’re done (click the **Render** button or press Ctrl+Shift+K).
 ### Step 5: Reflect in your journal
 
 ``` r
+
 download_journal("mc451")
 ```
 
@@ -92,6 +96,7 @@ Billboard chart data, Spotify audio features, and Genius metadata.
 ### Loading the data
 
 ``` r
+
 data(unified_music)
 ```
 
@@ -102,9 +107,10 @@ each time.
 ### Exploring the dataset
 
 ``` r
+
 # Dimensions
 dim(unified_music)
-#> [1] 1792   36
+#> [1] 1792   35
 
 # Column names
 names(unified_music)
@@ -118,13 +124,13 @@ summary(unified_music$danceability)
 
 ### Key variable groups
 
-| Group     | Variables                                                | Description                         |
-|-----------|----------------------------------------------------------|-------------------------------------|
-| Identity  | `Song`, `Artist`                                         | Song and artist names               |
-| Billboard | `Max_Rank`, `Weeks_on_Board`, `Average_Rank`             | Chart performance                   |
-| Audio     | `danceability`, `energy`, `valence`, `tempo`, `loudness` | Spotify features (0–1 scale or raw) |
-| Genre     | `playlist_genre`, `playlist_subgenre`                    | Genre classification                |
-| Metadata  | `year`, `views`, `lyrics`                                | Release year, Genius views, lyrics  |
+| Group | Variables | Description |
+|----|----|----|
+| Identity | `Song`, `Artist` | Song and artist names |
+| Billboard | `Max_Rank`, `Weeks_on_Board`, `Average_Rank` | Chart performance |
+| Audio | `danceability`, `energy`, `valence`, `tempo`, `loudness` | Spotify features (0–1 scale or raw) |
+| Genre | `playlist_genre`, `playlist_subgenre` | Genre classification |
+| Metadata | `year`, `views`, `features` | Release year, Genius views, featured artists |
 
 For the complete variable reference with types, ranges, and
 descriptions, see
@@ -140,6 +146,7 @@ The reflective journal is a weekly habit. Each call to
 creates a new file:
 
 ``` r
+
 # Download this week's journal
 download_journal("mc451")
 
@@ -156,6 +163,7 @@ researcher.
 When you reach the end of the semester, scaffold your final project:
 
 ``` r
+
 final_project("mc451")
 ```
 
@@ -186,6 +194,7 @@ HTML book with search, navigation, and interactive code examples.
 All chapters are bundled in the package as markdown files:
 
 ``` r
+
 # List all chapters
 list.files(system.file("textbook", package = "coursepackR"))
 
@@ -205,6 +214,7 @@ folder. In RStudio: **Session \> Set Working Directory \> Choose
 Directory**. Or in R:
 
 ``` r
+
 setwd("~/MC-451")
 ```
 
@@ -223,6 +233,7 @@ across sessions and makes it easy to find your files.
 ### Get help on any function
 
 ``` r
+
 ?download_week
 ?mccourse_check
 ```
