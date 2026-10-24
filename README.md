@@ -63,16 +63,16 @@ head(unified_music)
 
 ### Dataset
 
-The `unified_music` dataset contains **1,792 songs** with **36 variables** from three sources:
+The `unified_music` dataset contains **1,792 songs** with **35 variables** from three sources:
 
 - **Billboard** — chart rank, weeks on board, chart entry/exit dates
 - **Spotify** — audio features (danceability, energy, valence, tempo, loudness, etc.)
-- **Genius** — page views, lyrics, featured artists
+- **Genius** — page views, featured artists (lyrics are copyrighted and not included)
 
 ```r
 data(unified_music)
 dim(unified_music)
-#> [1] 1792   36
+#> [1] 1792   35
 ```
 
 See the [Unified Music Dataset vignette](https://sim-lab-siue.github.io/coursepackR/articles/unified-music-codebook.html) for the full variable reference and example analyses.
@@ -154,7 +154,7 @@ coursepackR/
 ├── R/                    # Package functions
 ├── man/                  # Auto-generated help pages
 ├── data/                 # unified_music.rda (lazy-loaded)
-├── data-raw/             # Source CSV and preparation script
+├── data-raw/             # Preparation script (the source CSV is not distributed)
 ├── inst/
 │   ├── textbook/         # 22 markdown chapters (offline access)
 │   └── courses/mc451/
@@ -179,4 +179,8 @@ coursepackR/
 
 ## License
 
-MIT
+The package code is released under the MIT License (see `LICENSE.md`).
+The textbook chapters in `inst/textbook/` are licensed CC BY 4.0 (see
+`inst/textbook/LICENSE`). The `unified_music` values come from Billboard,
+the Spotify Web API, and Genius and remain subject to those sources' own
+terms; song lyrics are not included.

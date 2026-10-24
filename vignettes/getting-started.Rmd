@@ -110,7 +110,7 @@ The dataset is lazy-loaded, meaning it's available as soon as you call
 ```r
 # Dimensions
 dim(unified_music)
-#> [1] 1792   36
+#> [1] 1792   35
 
 # Column names
 names(unified_music)
@@ -130,7 +130,7 @@ summary(unified_music$danceability)
 | Billboard | `Max_Rank`, `Weeks_on_Board`, `Average_Rank` | Chart performance |
 | Audio | `danceability`, `energy`, `valence`, `tempo`, `loudness` | Spotify features (0–1 scale or raw) |
 | Genre | `playlist_genre`, `playlist_subgenre` | Genre classification |
-| Metadata | `year`, `views`, `lyrics` | Release year, Genius views, lyrics |
+| Metadata | `year`, `views`, `features` | Release year, Genius views, featured artists |
 
 For the complete variable reference with types, ranges, and
 descriptions, see `vignette("unified-music-codebook")` or the

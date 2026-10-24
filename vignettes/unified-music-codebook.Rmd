@@ -13,14 +13,15 @@ explains where the data comes from, and shows example analyses.
 
 ## Overview
 
-The dataset contains **1,792 songs** with **36 variables** drawn from
+The dataset contains **1,792 songs** with **35 variables** drawn from
 three public sources:
 
 - **Billboard Hot 100** — Weekly chart rankings, weeks on the chart,
   and chart entry/exit dates
 - **Spotify Web API** — Audio features (danceability, energy, valence,
   etc.), track metadata, and playlist classifications
-- **Genius** — Page view counts, featured artists, and lyrics text
+- **Genius** — Page view counts and featured artists (song lyrics are
+  copyrighted and are not included)
 
 ## Loading the Data
 
@@ -29,7 +30,7 @@ library(coursepackR)
 data(unified_music)
 
 dim(unified_music)
-#> [1] 1792   36
+#> [1] 1792   35
 
 str(unified_music)
 ```
@@ -92,14 +93,13 @@ the top position).
 | `playlist_genre` | character | Broad genre category (e.g., "pop", "rap", "rock") |
 | `playlist_subgenre` | character | More specific subgenre label |
 
-### Genius Metadata (4 variables)
+### Genius Metadata (3 variables)
 
 | Variable | Type | Description |
 |----------|------|-------------|
 | `id` | integer | Genius song identifier |
 | `views` | integer | Genius page view count |
 | `features` | character | Featured artists (if any) |
-| `lyrics` | character | Full song lyrics text |
 
 ### Other (2 variables)
 
@@ -156,8 +156,6 @@ summary(unified_music$duration_min)
 
 - Some songs appear in multiple Spotify playlists and may have
   different `playlist_genre` or `playlist_subgenre` values.
-- `lyrics` may be `NA` for songs where Genius did not have lyrics
-  available.
 - `views` reflects page views at the time of data collection and may
   not reflect current counts.
 - `track_popularity` is a point-in-time Spotify metric that changes
